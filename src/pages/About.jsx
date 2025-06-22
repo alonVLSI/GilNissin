@@ -10,9 +10,6 @@ export default function About() {
           <h1 className="text-5xl font-bold text-gray-900 mb-4">עליי ועל הגישה הטיפולית</h1>
           <p className="text-xl text-amber-700 font-medium">מסע של חיבור בין גוף לנפש</p>
 
-        {/* עוטף את כל התוכן ב-center */}
-          <div className="grid lg:grid-cols-5 gap-12 items-center justify-center">
-            {/* טקסט וכרטיסיות */}
             <div className="lg:col-span-3 space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
                 שמי גיל ברדוגו נסים, פסיכותרפיסטית מוסמכת המתמחה בגישה המשלבת גוף ונפש. אני מאמינה שהגוף שלנו נושא את סיפור חיינו, את הרגשות, החוויות והטראומות שלנו. הוא מחזיק מפתחות לריפוי עמוק ובר קיימא.
@@ -39,8 +36,6 @@ export default function About() {
               </div>
             </div>
           </div>
-        </div>
-
       </div>
     </div>
   );
