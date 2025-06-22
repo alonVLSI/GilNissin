@@ -29,12 +29,6 @@ export default function CouplesTherapy() {
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               בטיפול נלמד יחד שפה חדשה של הקשבה, כבוד הדדי ואמפתיה, ונבנה מחדש את הגשרים שנשחקו עם הזמן.
             </p>
-            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white text-lg">
-                <WhatsappIcon className="w-5 h-5 ml-2" />
-                לשליחת הודעה
-              </Button>
-            </a>
           </div>
           <div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-stone-200">

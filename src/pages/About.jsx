@@ -40,13 +40,6 @@ export default function About() {
               </div>
           </div>
           
-          <div className="lg:col-span-2">
-            <img 
-              src="https://images.unsplash.com/photo-1599905292494-a924462635a4?ixlib=rb-4.0.3&auto=format&fit=crop&w=500&q=80"
-              alt="סביבת טיפול רגועה המשלבת טבע"
-              className="rounded-2xl shadow-xl w-full"
-            />
-          </div>
         </div>
       </div>
     </div>
