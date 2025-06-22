@@ -155,10 +155,17 @@ export default function Layout({ children, currentPageName }) {
                 </Button>
             </a>
           </div>
-          <div className="border-t border-stone-700 mt-8 pt-8 text-center text-stone-400">
-		    <img src={logoImg} alt="לוגו - גיל ברדוגו נסים" className="h-24 w-24 rounded-full object-cover" />
-            <p>&copy; 2025 גיל ברדוגו נסים - פסיכותרפיה גוף-נפש. כל הזכויות שמורות.</p>
-          </div>
+<div className="border-t border-stone-700 mt-8 pt-8 text-center text-stone-400">
+  <div className="flex justify-center mb-4">
+    <img 
+      src={logoImg} 
+      alt="לוגו - גיל ברדוגו נסים" 
+      className="h-24 w-24 rounded-full object-cover" 
+    />
+  </div>
+  <p>&copy; 2025 גיל ברדוגו נסים - פסיכותרפיה גוף-נפש. כל הזכויות שמורות.</p>
+</div>
+
         </div>
       </footer>
     </div>
