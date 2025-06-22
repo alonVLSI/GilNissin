@@ -14,7 +14,7 @@ export default function About() {
         {/* תוכן + תמונה */}
         <div className="grid lg:grid-cols-5 gap-12 items-center">
           {/* טקסט וכרטיסיות */}
-          <div className="lg:col-span-3 space-y-6 text-center sm:text-right">
+          <div className="lg:col-span-3 space-y-6 text-center">
             <p className="text-lg text-gray-700 leading-relaxed">
               שמי גיל ברדוגו נסים, פסיכותרפיסטית מוסמכת המתמחה בגישה המשלבת גוף ונפש. אני מאמינה שהגוף שלנו נושא את סיפור חיינו, את הרגשות, החוויות והטראומות שלנו. הוא מחזיק מפתחות לריפוי עמוק ובר קיימא.
             </p>
@@ -26,23 +26,24 @@ export default function About() {
             </p>
 
             {/* כרטיסיות */}
-            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 justify-items-center sm:justify-items-start">
-              <div className="flex items-center gap-3 p-4 bg-stone-100 rounded-xl text-right">
+            <div className="grid grid-cols-1 sm:grid-cols-2 gap-4 pt-6 justify-items-center">
+              <div className="flex flex-col items-center gap-3 p-4 bg-stone-100 rounded-xl">
                 <Award className="w-8 h-8 text-amber-700" />
-                <div>
+                <div className="text-center">
                   <div className="font-semibold">פסיכותרפיסטית מוסמכת</div>
                   <div className="text-sm text-gray-600">התמחות בטיפול גוף-נפש</div>
                 </div>
               </div>
-              <div className="flex items-center gap-3 p-4 bg-stone-100 rounded-xl text-right">
+              <div className="flex flex-col items-center gap-3 p-4 bg-stone-100 rounded-xl">
                 <Brain className="w-8 h-8 text-amber-700" />
-                <div>
+                <div className="text-center">
                   <div className="font-semibold">גישה אינטגרטיבית</div>
                   <div className="text-sm text-gray-600">שילוב שיחה, מודעות ותנועה</div>
                 </div>
               </div>
             </div>
           </div>
+
         </div>
       </div>
     </div>
