@@ -11,7 +11,7 @@ export default function About() {
         </div>
 
         <div className="grid lg:grid-cols-5 gap-12 items-center">
-          <div className="lg:col-span-3 space-y-6">
+          <div className="lg:col-span-3 space-y-6 text-center items-center flex flex-col">
               <p className="text-lg text-gray-700 leading-relaxed">
                 שמי גיל ברדוגו נסים, פסיכותרפיסטית מוסמכת המתמחה בגישה המשלבת גוף ונפש. אני מאמינה שהגוף שלנו נושא את סיפור חיינו, את הרגשות, החוויות והטראומות שלנו. הוא מחזיק מפתחות לריפוי עמוק ובר קיימא.
               </p>
