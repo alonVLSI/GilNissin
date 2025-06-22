@@ -8,7 +8,7 @@ export default function About() {
         {/* כותרת ממורכזת */}
         <div className="text-center mb-16">
           <h1 className="text-5xl font-bold text-gray-900 mb-4">עליי ועל הגישה הטיפולית</h1>
-          <p className="text-xl text-amber-700 font-medium">מסע של חיבור בין גוף לנפש</p>
+          <p className="text-xl text-amber-700 font-medium mb-6">מסע של חיבור בין גוף לנפש</p>
 
             <div className="lg:col-span-3 space-y-6">
               <p className="text-lg text-gray-700 leading-relaxed">
