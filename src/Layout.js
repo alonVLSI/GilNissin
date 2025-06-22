@@ -30,7 +30,7 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex justify-between items-center">
             <Link to={createPageUrl("Home")} className="flex items-center gap-3 text-xl md:text-2xl font-bold text-amber-800">
-              <img src={logoImg} alt="לוגו - גיל ברדוגו נסים" className="h-24 w-24 rounded-full object-cover" />
+              <img src={logoImg} alt="לוגו - גיל ברדוגו נסים" className="h-24 w-24 rounded-full object-cover mr-4" />
               <span className="hidden sm:block">גיל ברדוגו נסים</span>
             </Link>
 
@@ -160,10 +160,10 @@ export default function Layout({ children, currentPageName }) {
     <img 
       src={logoImg} 
       alt="לוגו - גיל ברדוגו נסים" 
-      className="h-24 w-24 rounded-full object-cover" 
+      className="h-32 w-32 rounded-full object-cover" 
     />
   </div>
-  <p>&copy; 2025 גיל ברדוגו נסים - פסיכותרפיה גוף-נפש. כל הזכויות שמורות.</p>
+  <p class:"text-md">&copy; 2025 גיל ברדוגו נסים - פסיכותרפיה גוף-נפש. כל הזכויות שמורות.</p>
 </div>
 
         </div>
