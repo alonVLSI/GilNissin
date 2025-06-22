@@ -10,6 +10,7 @@ export default function About() {
           <h1 className="text-5xl font-bold text-gray-900 mb-4">עליי ועל הגישה הטיפולית</h1>
           <p className="text-xl text-amber-700 font-medium">מסע של חיבור בין גוף לנפש</p>
         </div>
+        <div className="text-center">
 
         {/* תוכן + תמונה */}
         <div className="grid lg:grid-cols-5 gap-12 items-center">
@@ -43,7 +44,7 @@ export default function About() {
               </div>
             </div>
           </div>
-
+		</div>
         </div>
       </div>
     </div>
