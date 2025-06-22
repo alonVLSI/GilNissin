@@ -53,7 +53,7 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Mobile Center - WhatsApp Button */}
             <div className="md:hidden">
-              <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white px-3 py-2">
                   <WhatsappIcon className="w-4 h-4" />
                 </Button>
@@ -61,7 +61,7 @@ export default function Layout({ children, currentPageName }) {
             </div>
 
             {/* Desktop WhatsApp Button */}
-            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer" className="hidden md:block">
+            <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer" className="hidden md:block">
               <Button className="bg-green-500 hover:bg-green-600 text-white">
                 <WhatsappIcon className="w-5 h-5 ml-2" />
                 לשליחת הודעה
@@ -134,7 +134,7 @@ export default function Layout({ children, currentPageName }) {
               <div className="space-y-3 text-stone-300">
                 <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-amber-400" />
-                    <span>052-123-4567</span>
+                    <span>054-427-6648</span>
                 </div>
                  <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-amber-400" />
@@ -148,7 +148,7 @@ export default function Layout({ children, currentPageName }) {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg">
                   <WhatsappIcon className="w-5 h-5 ml-2" />
                   לשליחת הודעה
@@ -156,6 +156,7 @@ export default function Layout({ children, currentPageName }) {
             </a>
           </div>
           <div className="border-t border-stone-700 mt-8 pt-8 text-center text-stone-400">
+		    <img src={logoImg} alt="לוגו - גיל ברדוגו נסים" className="h-24 w-24 rounded-full object-cover" />
             <p>&copy; 2025 גיל ברדוגו נסים - פסיכותרפיה גוף-נפש. כל הזכויות שמורות.</p>
           </div>
         </div>
