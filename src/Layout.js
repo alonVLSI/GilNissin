@@ -30,7 +30,7 @@ export default function Layout({ children, currentPageName }) {
         <div className="max-w-7xl mx-auto px-6 py-3">
           <div className="flex justify-between items-center">
             <Link to={createPageUrl("Home")} className="flex items-center gap-3 text-xl md:text-2xl font-bold text-amber-800">
-              <img src={logoImg} alt="לוגו - גיל ברדוגו נסים" className="w-10 h-10 md:w-14 md:h-14 rounded-full object-cover border-2 border-amber-100" />
+              <img src={logoImg} alt="לוגו - גיל ברדוגו נסים" className="h-24 w-24 rounded-full object-cover" />
               <span className="hidden sm:block">גיל ברדוגו נסים</span>
             </Link>
 
