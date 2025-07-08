@@ -22,13 +22,19 @@ export default function CouplesTherapy() {
         <div className="grid lg:grid-cols-2 gap-12 items-center">
           <div>
             <h1 className="text-5xl font-bold text-gray-900 mb-4">טיפול זוגי</h1>
-            <p className="text-xl text-amber-700 mb-6">להצמיח מחדש את הקשר והאינטימיות</p>
+            <p className="text-xl text-orange-600 mb-6">להצמיח מחדש את הקשר והאינטימיות</p>
             <p className="text-lg text-gray-700 leading-relaxed mb-4">
               מערכת יחסים זוגית היא מהיסודות החשובים בחיינו, אך לעיתים היא נתקלת באתגרים, קונפליקטים ושחיקה. טיפול זוגי נועד לספק לכם מרחב ניטרלי ובטוח לדבר על הקשיים, להבין את הצרכים של כל אחד מכם, ולמצוא דרכים חדשות לתקשר ולהתחבר.
             </p>
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               בטיפול נלמד יחד שפה חדשה של הקשבה, כבוד הדדי ואמפתיה, ונבנה מחדש את הגשרים שנשחקו עם הזמן.
             </p>
+            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
+              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white text-lg">
+                <WhatsappIcon className="w-5 h-5 ml-2" />
+                לשליחת הודעה
+              </Button>
+            </a>
           </div>
           <div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-stone-200">
@@ -36,7 +42,7 @@ export default function CouplesTherapy() {
               <ul className="space-y-4">
                 {goals.map((goal, index) => (
                   <li key={index} className="flex items-start">
-                    <CheckCircle className="w-6 h-6 text-green-600 mt-1 ml-3 flex-shrink-0" />
+                    <CheckCircle className="w-6 h-6 text-teal-600 mt-1 ml-3 flex-shrink-0" />
                     <span className="text-gray-700 text-lg">{goal}</span>
                   </li>
                 ))}
