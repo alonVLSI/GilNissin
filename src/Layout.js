@@ -32,7 +32,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex justify-between items-center">
             <Link to={createPageUrl("Home")} className="flex items-center gap-3 text-xl md:text-2xl font-bold text-teal-700">
               <img 
-                src="{logoImg}" 
+                src={logoImg}
                 alt="לוגו - גיל ברדוגו נסים" 
                 className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-teal-200" 
               />
