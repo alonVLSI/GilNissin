@@ -1,17 +1,16 @@
-
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../utils';
-import { Button } from '../components/ui/button';
+import { createPageUrl } from '../components/utils';
+import { Button } from '../components/ui/Button';
 import { Heart, Users, Brain } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
 import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function Home() {
   return (
     <div>
       {/* Hero Section */}
-      <section className="bg-stone-100/50 py-12 md:py-24 px-6">
+      <section className="bg-gradient-to-br from-teal-50 to-orange-50 py-12 md:py-24 px-6">
         <div className="max-w-7xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-center">
             <div className="space-y-8">
@@ -19,7 +18,7 @@ export default function Home() {
                 <h1 className="text-5xl font-bold text-gray-900 leading-tight">
                   גיל ברדוגו נסים
                 </h1>
-                <p className="text-2xl text-amber-700 font-medium">
+                <p className="text-2xl text-orange-600 font-medium">
                   פסיכותרפיה המשלבת גוף ונפש
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
@@ -35,7 +34,7 @@ export default function Home() {
                   </Button>
                 </a>
                 <Link to={createPageUrl("About")}>
-                  <Button size="lg" variant="outline" className="border-amber-300 text-amber-800 hover:bg-amber-100 text-lg px-8 py-3 w-full sm:w-auto">
+                  <Button size="lg" variant="outline" className="border-teal-300 text-teal-700 hover:bg-teal-50 text-lg px-8 py-3 w-full sm:w-auto">
                     קראו עליי עוד
                   </Button>
                 </Link>
@@ -44,9 +43,9 @@ export default function Home() {
             
             <div className="relative">
               <div className="relative w-full max-w-md mx-auto">
-                <div className="absolute -inset-4 bg-gradient-to-r from-amber-400 to-orange-400 rounded-3xl blur opacity-25"></div>
+                <div className="absolute -inset-4 bg-gradient-to-r from-teal-400 via-orange-400 to-purple-500 rounded-3xl blur opacity-25"></div>
                 <img 
-                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB4MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
+                  src="https://images.unsplash.com/photo-1544367567-0f2fcb009e0b?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1000&q=80"
                   alt="אישה בתנוחת יוגה המייצגת שילוב גוף ונפש"
                   className="relative rounded-3xl shadow-2xl w-full"
                 />
@@ -92,17 +91,17 @@ export default function Home() {
 }
 
 const ServiceCard = ({ icon: Icon, title, description, link }) => (
-  <Card className="text-center border-stone-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300">
+  <Card className="text-center border-stone-200 hover:shadow-xl hover:-translate-y-2 transition-all duration-300 hover:border-teal-200">
     <CardHeader>
-      <div className="mx-auto w-16 h-16 bg-amber-100 rounded-full flex items-center justify-center mb-4">
-        <Icon className="w-8 h-8 text-amber-700" />
+      <div className="mx-auto w-16 h-16 bg-gradient-to-br from-teal-100 to-orange-100 rounded-full flex items-center justify-center mb-4">
+        <Icon className="w-8 h-8 text-teal-600" />
       </div>
       <CardTitle className="text-2xl font-bold text-gray-900">{title}</CardTitle>
     </CardHeader>
     <CardContent>
       <p className="text-gray-600 mb-6">{description}</p>
       <Link to={link}>
-        <Button variant="link" className="text-amber-700 font-semibold">
+        <Button variant="link" className="text-teal-600 font-semibold hover:text-teal-700">
           למידע נוסף
         </Button>
       </Link>
