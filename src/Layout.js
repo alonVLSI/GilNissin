@@ -1,10 +1,11 @@
 
 import React, { useState } from 'react';
 import { Link, useLocation } from 'react-router-dom';
-import { createPageUrl } from './components/utils';
+import { createPageUrl } from './utils';
 import { Phone, Mail, MapPin, Menu, X } from 'lucide-react';
-import { Button } from './components/ui/Button';
+import { Button } from './components/ui/button';
 import WhatsappIcon from './components/WhatsappIcon';
+import logoImg from './components/Logo.png';
 
 export default function Layout({ children, currentPageName }) {
   const location = useLocation();
