@@ -32,7 +32,7 @@ export default function Layout({ children, currentPageName }) {
           <div className="flex justify-between items-center">
             <Link to={createPageUrl("Home")} className="flex items-center gap-3 text-xl md:text-2xl font-bold text-teal-700">
               <img 
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7413e4a01_WhatsAppImage2025-07-01at143149.jpeg" 
+                src="{logoImg}" 
                 alt="לוגו - גיל ברדוגו נסים" 
                 className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-teal-200" 
               />
@@ -58,7 +58,7 @@ export default function Layout({ children, currentPageName }) {
 
             {/* Mobile Center - WhatsApp Button */}
             <div className="md:hidden">
-              <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
+              <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white px-3 py-2">
                   <WhatsappIcon className="w-4 h-4" />
                 </Button>
@@ -66,7 +66,7 @@ export default function Layout({ children, currentPageName }) {
             </div>
 
             {/* Desktop WhatsApp Button */}
-            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer" className="hidden md:block">
+            <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer" className="hidden md:block">
               <Button className="bg-green-500 hover:bg-green-600 text-white">
                 <WhatsappIcon className="w-5 h-5 ml-2" />
                 לשליחת הודעה
@@ -139,7 +139,7 @@ export default function Layout({ children, currentPageName }) {
               <div className="space-y-3 text-gray-300">
                 <div className="flex items-center gap-3">
                     <Phone className="w-5 h-5 text-teal-400" />
-                    <span>052-123-4567</span>
+                    <span>054-427-6648</span>
                 </div>
                  <div className="flex items-center gap-3">
                     <Mail className="w-5 h-5 text-teal-400" />
@@ -153,7 +153,7 @@ export default function Layout({ children, currentPageName }) {
             </div>
           </div>
           <div className="mt-12 text-center">
-            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
+            <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg">
                   <WhatsappIcon className="w-5 h-5 ml-2" />
                   לשליחת הודעה

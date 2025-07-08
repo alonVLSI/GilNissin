@@ -27,7 +27,7 @@ export default function Home() {
               </div>
               
               <div className="flex flex-col sm:flex-row gap-4">
-                <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
+                <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                   <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-3 w-full sm:w-auto">
                     <WhatsappIcon className="w-5 h-5 ml-2" />
                     לשליחת הודעה
