@@ -25,7 +25,7 @@ export default function Contact() {
              <InfoCard 
               icon={Mail}
               title="דואר אלקטרוני"
-              content="michal@therapy.co.il"
+              content="gil@therapy.co.il"
               subContent="מענה מובטח תוך 24 שעות"
             />
              <InfoCard 
@@ -45,7 +45,7 @@ export default function Contact() {
                       <input 
                         type="text" 
                         placeholder="שם מלא"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition"
                         dir="rtl"
                       />
                     </div>
@@ -53,7 +53,7 @@ export default function Contact() {
                       <input 
                         type="tel" 
                         placeholder="מספר טלפון"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition"
                         dir="rtl"
                       />
                     </div>
@@ -61,7 +61,7 @@ export default function Contact() {
                       <input 
                         type="email" 
                         placeholder="כתובת אימייל"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition"
                         dir="rtl"
                       />
                     </div>
@@ -69,11 +69,11 @@ export default function Contact() {
                       <textarea 
                         placeholder="במה תרצו שאסייע? (אופציונלי)"
                         rows="4"
-                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-amber-500 focus:border-amber-500 transition"
+                        className="w-full p-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-teal-500 focus:border-teal-500 transition"
                         dir="rtl"
                       ></textarea>
                     </div>
-                    <Button type="submit" className="w-full bg-amber-700 hover:bg-amber-800 text-lg py-3">
+                    <Button type="submit" className="w-full bg-teal-600 hover:bg-teal-700 text-lg py-3">
                       שליחה
                     </Button>
                   </form>
@@ -88,8 +88,8 @@ export default function Contact() {
 
 const InfoCard = ({ icon: Icon, title, content, subContent }) => (
   <div className="flex items-start gap-4" dir="rtl">
-    <div className="mt-1 w-12 h-12 bg-amber-100 rounded-full flex items-center justify-center flex-shrink-0">
-      <Icon className="w-6 h-6 text-amber-700" />
+    <div className="mt-1 w-12 h-12 bg-teal-100 rounded-full flex items-center justify-center flex-shrink-0">
+      <Icon className="w-6 h-6 text-teal-600" />
     </div>
     <div className="text-right">
       <h4 className="text-xl font-bold text-gray-900">{title}</h4>
