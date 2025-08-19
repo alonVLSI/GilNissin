@@ -71,13 +71,13 @@ export default function Home() {
             <ServiceCard 
               icon={Heart} 
               title="פסיכותרפיה המשלבת גוף-נפש" 
-              link={createPageUrl("BodyMindTherapy")}
+              link={createPageUrl("individual-therapy")}
             />
-          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
               icon={Heart} 
-              title="עליי" 
-              link={createPageUrl("About")}
+              title="טיפול אישי" 
+              description="מפגש אחד על אחד להתמודדות עם אתגרים אישיים, חרדה, דיכאון וצמיחה אישית."
+              link={createPageUrl("individual-therapy")}
             />
             <ServiceCard 
               icon={Users} 
