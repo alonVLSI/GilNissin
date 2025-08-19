@@ -67,12 +67,17 @@ export default function Home() {
               אני מציעה מרחב טיפולי למגוון אתגרים והתמודדויות, תוך התאמת הגישה הנכונה ביותר עבורכם.
             </p>
           </div>
+		  <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ServiceCard 
+              icon={Heart} 
+              title="פסיכותרפיה המשלבת גוף-נפש" 
+              link={createPageUrl("BodyMindTherapy")}
+            />
           <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
               icon={Heart} 
-              title="טיפול אישי" 
-              description="מפגש אחד על אחד להתמודדות עם אתגרים אישיים, חרדה, דיכאון וצמיחה אישית."
-              link={createPageUrl("individual-therapy")}
+              title="עליי" 
+              link={createPageUrl("About")}
             />
             <ServiceCard 
               icon={Users} 

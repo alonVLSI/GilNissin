@@ -13,10 +13,12 @@ export default function Layout({ children, currentPageName }) {
   
   const navItems = [
     { name: "עמוד הבית", page: "Home" },
-    { name: "טיפול אישי", page: "IndividualTherapy" },
-    { name: "טיפול זוגי", page: "CouplesTherapy" },
-    { name: "טיפול משפחתי", page: "FamilyTherapy" },
-    { name: "עליי", page: "About" },
+	{ name: "פסיכותרפיית גוף-נפש", page: "BodyMindTherapy" },
+	{ name: "עליי", page: "About" },
+    { name: "הקליניקה", page: "clinic" },
+	{ name: "טיפול אישי", page: "IndividualTherapy" },
+    { name: "טיפול הורה-ילד", page: "parent-guidance" },
+    { name: "הרצאות", page: "lectures" },
     { name: "צור קשר", page: "Contact" },
   ];
 
