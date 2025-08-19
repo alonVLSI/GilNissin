@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { Heart, Home, Shield } from 'lucide-react';
 import WhatsappIcon from '../components/WhatsappIcon';
 

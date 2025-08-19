@@ -1,6 +1,6 @@
 import React from 'react';
 import { createPageUrl } from '../components/utils';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { CheckCircle, Clock, Users as UsersIcon } from 'lucide-react';
 import WhatsappIcon from '../components/WhatsappIcon';
 

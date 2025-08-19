@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
 import { Users, BookOpen, Heart, Brain, Clock, Target } from 'lucide-react';
 import WhatsappIcon from '../components/WhatsappIcon';
