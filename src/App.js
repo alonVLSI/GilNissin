@@ -5,9 +5,13 @@ import Layout from './Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import IndividualTherapy from './pages/IndividualTherapy';
-import CouplesTherapy from './pages/CouplesTherapy';
 import FamilyTherapy from './pages/FamilyTherapy';
 import Contact from './pages/Contact';
+import BodyMindTherapy from './pages/BodyMindTherapy';
+import clinic from './pages/clinic';
+import lectures from './pages/lectures';
+
+
 
 function App() {
   return (
@@ -20,7 +24,6 @@ function App() {
 		  <Route path="/BodyMindTherapy" element={<BodyMindTherapy />} />
 		  <Route path="/clinic" element={<clinic />} />
 		  <Route path="/parent-guidance" element={<parent-guidance />} />
-          <Route path="/couples-therapy" element={<CouplesTherapy />} />
           <Route path="/lectures" element={<lectures />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
