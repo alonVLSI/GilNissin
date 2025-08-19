@@ -17,8 +17,11 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/individual-therapy" element={<IndividualTherapy />} />
+		  <Route path="/BodyMindTherapy" element={<BodyMindTherapy />} />
+		  <Route path="/clinic" element={<clinic />} />
+		  <Route path="/parent-guidance" element={<parent-guidance />} />
           <Route path="/couples-therapy" element={<CouplesTherapy />} />
-          <Route path="/family-therapy" element={<FamilyTherapy />} />
+          <Route path="/lectures" element={<lectures />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
       </Layout>
