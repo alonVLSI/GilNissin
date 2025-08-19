@@ -3,7 +3,7 @@ import { Link } from 'react-router-dom';
 import { createPageUrl } from '../components/utils';
 import { Button } from '../components/ui/button';
 import { Heart, Users, Brain, BookOpen } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function Home() {
