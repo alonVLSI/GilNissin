@@ -11,16 +11,16 @@ export default function Layout({ children, currentPageName }) {
   const location = useLocation();
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
-  const navItems = [
-    { name: "עמוד הבית", page: "Home" },
-	{ name: "פסיכותרפיית גוף-נפש", page: "BodyMindTherapy" },
-	{ name: "עליי", page: "About" },
-    { name: "הקליניקה", page: "clinic" },
-	{ name: "טיפול אישי", page: "IndividualTherapy" },
-    { name: "טיפול הורה-ילד", page: "parent-guidance" },
-    { name: "הרצאות", page: "lectures" },
-    { name: "צור קשר", page: "Contact" },
-  ];
+const navItems = [
+  { name: "עמוד הבית", page: "/" },
+  { name: "פסיכותרפיית גוף-נפש", page: "/body-mind-therapy" },
+  { name: "עליי", page: "/about" },
+  { name: "הקליניקה", page: "/clinic" },
+  { name: "טיפול אישי", page: "/individual-therapy" },
+  { name: "טיפול הורה-ילד", page: "/parent-guidance" },
+  { name: "הרצאות", page: "/lectures" },
+  { name: "צור קשר", page: "/contact" },
+];
 
   const toggleMobileMenu = () => {
     setIsMobileMenuOpen(!isMobileMenuOpen);
