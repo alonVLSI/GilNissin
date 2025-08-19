@@ -1,7 +1,8 @@
 import React from 'react';
-import { Button } from '../components/ui/button';
-import { Card, CardContent } from '../components/ui/card';
-import { Phone, Mail, MapPin } from 'lucide-react';
+import { Button } from '../components/ui/Button';
+import { Card, CardContent } from '../components/ui/Card';
+import { Phone, Mail, MapPin, Award } from 'lucide-react';
+import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function Contact() {
   return (
@@ -14,25 +15,25 @@ export default function Contact() {
           </p>
         </div>
 
-        <div className="grid lg:grid-cols-5 gap-10">
+        <div className="grid lg:grid-cols-5 gap-10 mb-16">
           <div className="lg:col-span-2 space-y-8">
             <InfoCard 
               icon={Phone}
-              title="טלפון"
-              content="052-123-4567"
-              subContent="זמינה בימים א-ה, בין 9:00 ל-18:00"
+              title="טלפון נייד"
+              content="054-4276648"
+              subContent="זמינה לשיחות תיאום בימים א-ה"
             />
              <InfoCard 
               icon={Mail}
               title="דואר אלקטרוני"
-              content="gil@therapy.co.il"
+              content="giln68@gmail.com"
               subContent="מענה מובטח תוך 24 שעות"
             />
              <InfoCard 
               icon={MapPin}
-              title="כתובת הקליניקה"
-              content="רחוב הרצל 15, תל אביב"
-              subContent="קליניקה נגישה עם חניה באזור"
+              title="מיקום הטיפול"
+              content="מזכרת בתיה"
+              subContent="קליניקה פרטית ומרכז נתיבים למשפחה והורות"
             />
           </div>
 
@@ -80,6 +81,46 @@ export default function Contact() {
                 </CardContent>
               </Card>
           </div>
+        </div>
+
+        <div className="bg-white p-8 rounded-2xl shadow-lg border border-stone-200">
+          <div className="flex items-center gap-4 mb-6">
+            <Award className="w-10 h-10 text-teal-600" />
+            <div>
+              <h3 className="text-2xl font-bold text-gray-900">גיל ברדוגו נסים</h3>
+              <p className="text-lg text-orange-600">פסיכותרפיסטית בגישה פסיכודינמית (M.A)</p>
+            </div>
+          </div>
+          
+          <div className="grid md:grid-cols-2 gap-8 text-gray-700">
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-3">הכשרה והתמחויות:</h4>
+              <ul className="space-y-2">
+                <li>• M.A בהתפתחות הילד - האוניברסיטה העברית</li>
+                <li>• התמחות בפסיכותרפיה פסיכודינמית - בר אילן</li>
+                <li>• התמחות בגיל הרך</li>
+                <li>• טיפול בהתנהגויות אכילה ותפיסת הגוף</li>
+              </ul>
+            </div>
+            <div>
+              <h4 className="font-semibold text-gray-900 mb-3">תחומי טיפול:</h4>
+              <ul className="space-y-2">
+                <li>• טיפול אישי</li>
+                <li>• טיפול מונחה הורים</li>
+                <li>• טיפול דיאדי (הורה-ילד)</li>
+                <li>• הרצאות וסדנאות</li>
+              </ul>
+            </div>
+          </div>
+        </div>
+
+        <div className="text-center mt-12">
+          <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
+            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white text-lg px-8 py-3">
+              <WhatsappIcon className="w-5 h-5 ml-2" />
+              לשליחת הודעה בוואטסאפ
+            </Button>
+          </a>
         </div>
       </div>
     </div>

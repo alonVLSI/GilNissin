@@ -1,9 +1,9 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../utils';
-import { Button } from '../components/ui/button';
-import { Heart, Users, Brain } from 'lucide-react';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { createPageUrl } from '../components/utils';
+import { Button } from '../components/ui/Button';
+import { Heart, Users, Brain, BookOpen } from 'lucide-react';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
 import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function Home() {
@@ -22,7 +22,10 @@ export default function Home() {
                   פסיכותרפיה המשלבת גוף ונפש
                 </p>
                 <p className="text-lg text-gray-600 leading-relaxed">
-                  אני מזמינה אותך למסע ריפוי והתפתחות אישית, בו נשלב שיחה עם הקשבה עמוקה לגוף. יחד, ניצור מרחב בטוח לחיבור מחודש לעצמך, לחיזוק החוסן הנפשי ולצמיחה.
+                  דרכי המקצועית והאישית התעצבה מתוך הדיאלוג המתמיד והמפגש העמוק בין הנפש והגוף. למדתי להכיר בכך שהגוף מבטא את הנפש בשפתו הייחודית, וכי הנפש, בתורה, פוגשת את הגוף, נוגעת בו ומדברת דרכו.
+                </p>
+                <p className="text-lg text-gray-600 leading-relaxed">
+                  אני מאמינה שהמסרים מהגוף אינם סימפטומים שיש "לתקן" או להעלים, אלא הזמנה להקשבה.
                 </p>
               </div>
               
@@ -33,7 +36,7 @@ export default function Home() {
                     לשליחת הודעה
                   </Button>
                 </a>
-                <Link to={createPageUrl("About")}>
+                <Link to={createPageUrl("about")}>
                   <Button size="lg" variant="outline" className="border-teal-300 text-teal-700 hover:bg-teal-50 text-lg px-8 py-3 w-full sm:w-auto">
                     קראו עליי עוד
                   </Button>
@@ -64,24 +67,30 @@ export default function Home() {
               אני מציעה מרחב טיפולי למגוון אתגרים והתמודדויות, תוך התאמת הגישה הנכונה ביותר עבורכם.
             </p>
           </div>
-          <div className="grid md:grid-cols-3 gap-8">
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
             <ServiceCard 
               icon={Heart} 
               title="טיפול אישי" 
               description="מפגש אחד על אחד להתמודדות עם אתגרים אישיים, חרדה, דיכאון וצמיחה אישית."
-              link={createPageUrl("IndividualTherapy")}
+              link={createPageUrl("individual-therapy")}
             />
-             <ServiceCard 
+            <ServiceCard 
               icon={Users} 
-              title="טיפול זוגי" 
-              description="שיפור התקשורת, פתרון קונפליקטים וחיזוק הקשר והאינטימיות במערכת היחסים."
-              link={createPageUrl("CouplesTherapy")}
+              title="טיפול מונחה הורים וטיפול דיאדי" 
+              description="ליווי הורים בתהליכים פרטניים וקבוצתיים, וטיפול משותף עם הילד."
+              link={createPageUrl("parent-guidance")}
             />
-             <ServiceCard 
+            <ServiceCard 
               icon={Brain} 
-              title="טיפול משפחתי" 
-              description="עבודה מערכתית עם כל בני המשפחה לשיפור היחסים והתמודדות עם אתגרים משותפים."
-              link={createPageUrl("FamilyTherapy")}
+              title="קליניקה שהיא מרחב" 
+              description="מרחב בטוח ומכיל שבו ניתן להניח את המגננות ופשוט להיות."
+              link={createPageUrl("clinic")}
+            />
+            <ServiceCard 
+              icon={BookOpen} 
+              title="הרצאות וסדנאות" 
+              description="לצוותי חינוך וטיפול, להורים, למתבגרים ולקהל הרחב."
+              link={createPageUrl("lectures")}
             />
           </div>
         </div>
@@ -101,7 +110,7 @@ const ServiceCard = ({ icon: Icon, title, description, link }) => (
     <CardContent>
       <p className="text-gray-600 mb-6">{description}</p>
       <Link to={link}>
-        <Button variant="link" className="text-teal-600 font-semibold hover:text-teal-700">
+        <Button variant="outline" className="border-teal-300 text-teal-700 hover:bg-teal-50">
           למידע נוסף
         </Button>
       </Link>
