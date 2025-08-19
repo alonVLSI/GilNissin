@@ -3,10 +3,12 @@ export function createPageUrl(pageName) {
     'Home': '/',
     'About': '/about',
     'IndividualTherapy': '/individual-therapy',
-    'CouplesTherapy': '/couples-therapy',
-    'FamilyTherapy': '/family-therapy',
+    'ParentGuidance': '/parent-guidance',
+    'BodyMindTherapy': '/body-mind-therapy',
+    'Clinic': '/clinic',
+    'Lectures': '/lectures',
     'Contact': '/contact'
   };
-  
+
   return pageMap[pageName] || '/';
 }
