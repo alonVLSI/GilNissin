@@ -13,13 +13,13 @@ export default function Layout({ children, currentPageName }) {
   
 const navItems = [
   { name: "עמוד הבית", page: "Home" },
-  { name: "פסיכותרפיית גוף-נפש", page: "/body-mind-therapy" },
-  { name: "עליי", page: "/about" },
-  { name: "הקליניקה", page: "/clinic" },
-  { name: "טיפול אישי", page: "/individual-therapy" },
-  { name: "טיפול הורה-ילד", page: "/parent-guidance" },
-  { name: "הרצאות", page: "/lectures" },
-  { name: "צור קשר", page: "/contact" },
+  { name: "פסיכותרפיית גוף-נפש", page: "BodyMindTherapy" },
+  { name: "עליי", page: "About" },
+  { name: "הקליניקה", page: "Clinic" },
+  { name: "טיפול אישי", page: "IndividualTherapy" },
+  { name: "טיפול הורה-ילד", page: "ParentGuidance" },
+  { name: "הרצאות", page: "Lectures" },
+  { name: "צור קשר", page: "Contact" },
 ];
 
   const toggleMobileMenu = () => {
