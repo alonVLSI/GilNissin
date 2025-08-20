@@ -68,7 +68,7 @@ export default function IndividualTherapy() {
               <h3 className="text-xl font-bold text-gray-900">פרטי הטיפול</h3>
             </div>
             <ul className="space-y-3 text-gray-700">
-              <li>• מפגש שבועי של 50 דקות</li>
+              <li>• מפגש שבועי או דו שבועי של 50 דקות</li>
               <li>• משך התהליך מותאם אישית</li>
               <li>• טיפול ממוקד וקצר מועד עד טיפול דינמי ארוך טווח</li>
               <li>• בהתאם לצרכים הייחודים של כל אחד ואחת</li>
