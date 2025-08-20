@@ -1,5 +1,7 @@
 import React from 'react';
 import { Award, Brain, Users } from 'lucide-react';
+import ProfileImage from '../images/profile.jpeg';
+
 
 export default function About() {
   return (
@@ -25,7 +27,7 @@ export default function About() {
           
           <div className="lg:col-span-2">
             <img 
-              src="../images/profile.jpg"
+              src={ProfileImage}
               alt="תמונת פרופיל"
               className="rounded-2xl shadow-xl w-full"
             />

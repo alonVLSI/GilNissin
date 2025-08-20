@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../components/ui/button';
 import { Heart, Home, Shield } from 'lucide-react';
 import WhatsappIcon from '../components/WhatsappIcon';
+import ClinicImage from '../images/clinic.jpeg';
 
 export default function Clinic() {
   return (
@@ -45,7 +46,7 @@ export default function Clinic() {
             <div className="relative w-full">
               <div className="absolute -inset-4 bg-gradient-to-r from-teal-400 via-orange-400 to-purple-500 rounded-3xl blur opacity-25"></div>
               <img 
-                src="../imgaes/clinic.jpeg"
+                src={ClinicImage}
                 alt="קליניקה רגועה ומזמינה"
                 className="relative rounded-3xl shadow-2xl w-full"
               />

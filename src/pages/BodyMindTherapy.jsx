@@ -3,6 +3,8 @@ import { Card, CardContent } from '../components/ui/card';
 import { Button } from '../components/ui/button';
 import { Heart } from 'lucide-react';
 import WhatsappIcon from '../components/WhatsappIcon';
+import babushkImage from '../images/babushk.jpeg';
+
 
 export default function BodyMindTherapy() {
   return (
@@ -52,7 +54,7 @@ export default function BodyMindTherapy() {
             {/* תמונה של בבושקות */}
             <div className="flex justify-center mt-10">
               <img
-                src="../images/babushkas.jpg"
+                src={babushkImage}
                 alt="תמונה של בבושקות"
                 className="rounded-xl shadow-md w-64 border-4 border-green-200"
               />
