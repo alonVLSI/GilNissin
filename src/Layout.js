@@ -12,7 +12,7 @@ export default function Layout({ children, currentPageName }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
 const navItems = [
-  { name: "עמוד הבית", page: "Home" },
+  //{ name: "עמוד הבית", page: "Home" },
   { name: "פסיכותרפיית גוף-נפש", page: "BodyMindTherapy" },
   { name: "עליי", page: "About" },
   { name: "הקליניקה", page: "Clinic" },
