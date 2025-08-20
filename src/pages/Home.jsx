@@ -36,7 +36,7 @@ export default function Home() {
                     לשליחת הודעה
                   </Button>
                 </a>
-                <Link to={createPageUrl("about")}>
+                <Link to={createPageUrl("About")}>
                   <Button size="lg" variant="outline" className="border-teal-300 text-teal-700 hover:bg-teal-50 text-lg px-8 py-3 w-full sm:w-auto">
                     קראו עליי עוד
                   </Button>
@@ -71,31 +71,31 @@ export default function Home() {
             <ServiceCard 
               icon={Heart} 
               title="פסיכותרפיה המשלבת גוף-נפש" 
-              link={createPageUrl("individual-therapy")}
+              link={createPageUrl("BodyMindTherapy")}
             />
             <ServiceCard 
               icon={Heart} 
               title="טיפול אישי" 
               description="מפגש אחד על אחד להתמודדות עם אתגרים אישיים, חרדה, דיכאון וצמיחה אישית."
-              link={createPageUrl("individual-therapy")}
+              link={createPageUrl("IndividualTherapy")}
             />
             <ServiceCard 
               icon={Users} 
               title="טיפול מונחה הורים וטיפול דיאדי" 
               description="ליווי הורים בתהליכים פרטניים וקבוצתיים, וטיפול משותף עם הילד."
-              link={createPageUrl("parent-guidance")}
+              link={createPageUrl("ParentGuidance")}
             />
             <ServiceCard 
               icon={Brain} 
               title="קליניקה שהיא מרחב" 
               description="מרחב בטוח ומכיל שבו ניתן להניח את המגננות ופשוט להיות."
-              link={createPageUrl("clinic")}
+              link={createPageUrl("Clinic")}
             />
             <ServiceCard 
               icon={BookOpen} 
               title="הרצאות וסדנאות" 
               description="לצוותי חינוך וטיפול, להורים, למתבגרים ולקהל הרחב."
-              link={createPageUrl("lectures")}
+              link={createPageUrl("Lectures")}
             />
           </div>
         </div>
