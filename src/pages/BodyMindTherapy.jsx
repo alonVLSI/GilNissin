@@ -52,7 +52,7 @@ export default function BodyMindTherapy() {
             {/* תמונה של בבושקות */}
             <div className="flex justify-center mt-10">
               <img
-                src="/images/babushkas.jpg"
+                src="../images/babushkas.jpg"
                 alt="תמונה של בבושקות"
                 className="rounded-xl shadow-md w-64 border-4 border-green-200"
               />

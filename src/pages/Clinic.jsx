@@ -45,7 +45,7 @@ export default function Clinic() {
             <div className="relative w-full">
               <div className="absolute -inset-4 bg-gradient-to-r from-teal-400 via-orange-400 to-purple-500 rounded-3xl blur opacity-25"></div>
               <img 
-                src="https://images.unsplash.com/photo-1559757148-5c350d0d3c56?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80"
+                src="../imgaes/clinic.jpeg"
                 alt="קליניקה רגועה ומזמינה"
                 className="relative rounded-3xl shadow-2xl w-full"
               />
