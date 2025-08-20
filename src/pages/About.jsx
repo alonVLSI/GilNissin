@@ -1,6 +1,6 @@
 import React from 'react';
 import { Award, Brain, Users } from 'lucide-react';
-import ProfileImage from '../images/profile.jpeg';
+import ProfileImage from '../images/profile.jpg';
 
 
 export default function About() {
