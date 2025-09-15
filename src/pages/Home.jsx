@@ -3,6 +3,7 @@ import { Link } from 'react-router-dom';
 import { createPageUrl } from '../utils';
 import { Button } from '../components/ui/button';
 import { Heart, Users, Brain, BookOpen, Sparkles } from 'lucide-react';
+import WhatsappIcon from '../components/WhatsappIcon';
 
 const ServiceCard = 
 ({ icon: Icon, title, description, link }) => 

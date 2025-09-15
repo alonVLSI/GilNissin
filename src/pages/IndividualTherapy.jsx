@@ -3,6 +3,7 @@ import { Button } from '../components/ui/button';
 import { CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '../utils';
+import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function IndividualTherapy() {
   const topics = [

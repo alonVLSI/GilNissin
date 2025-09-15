@@ -2,6 +2,7 @@ import React from 'react';
 import { Button } from '../components/ui/button';
 import { createPageUrl } from '../utils';
 import { Link } from 'react-router-dom';
+import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function About() {
   return (

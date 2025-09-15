@@ -4,6 +4,7 @@ import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card'
 import { Users, BookOpen, Heart, Brain, Clock, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '../utils';
+import WhatsappIcon from '../components/WhatsappIcon';
 
 const LectureCard = ({ lecture }) => (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-12">
