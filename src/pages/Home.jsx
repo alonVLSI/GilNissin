@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '../components/utils';
 import { Button } from '../components/ui/button';
-import { Heart, Users, Brain, BookOpen } from 'lucide-react';
+import { Heart, Users, Brain, BookOpen, Sparkles } from 'lucide-react';
 
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
@@ -26,20 +26,54 @@ export default function Home() {
                 {/* Quote with creative styling */}
                 <div className="relative bg-white p-8 rounded-2xl shadow-xl border-r-8 border-secondary">
                   <p className="font-serif text-xl italic text-gray-700 leading-relaxed mb-4">
-                    "כשהמילה תהפוך לגוף<br />
-                    והגוף יפתח את פיו<br />
-                    ויאמר את המילה שממנה<br />
-                    נוצר<br />
-                    אחבק את הגוף הזה<br />
+                    "כשהמילה תהפוך לגוף<br/>
+                    והגוף יפתח את פיו<br/>
+                    ויאמר את המילה שממנה<br/>
+                    נוצר<br/>
+                    אחבק את הגוף הזה<br/>
                     ואלין אותו לצדי."
                   </p>
                   <p className="text-sm text-gray-500 font-semibold">
                     חזי לסקלי, "שיעור עברית הֵא"
                   </p>
                 </div>
+
+                {/* טקסט טיפולי */}
+                <p className="text-xl text-gray-700 leading-relaxed font-medium">
+                  פסיכותרפיה המשלבת גוף-נפש רואה את האדם כישות שלמה בה הגוף והנפש מנהלים דיאלוג מתמיד ומשפיעים זה על זה.
+                  מתוך תפיסה זו צמחה דרכי המקצועית והאישית.
+                </p>
+
+                {showMore && (
+                  <div className="space-y-4 text-gray-700 leading-relaxed">
+                    <p>
+                      כפסיכותרפיסטית בגישה פסיכודינמית, אני מאמינה שהגוף מבטא את הנפש בשפתו הייחודית...
+                    </p>
+                    <p>
+                      דרכי הטיפולית נשענת על ידע וניסיון רב-תחומי, מהם אני שואבת כלים להתבוננות בביטויים המורכבים של הדיאלוג בין עולמנו הפנימי לגופנו...
+                    </p>
+                    <p>
+                      הגוף שלנו מדבר אותנו. הוא נושא את סיפור חיינו, ובדרכו הייחודית, הלא-מילולית, הוא מבטא את מה שלפעמים קשה להגיד במילים...
+                    </p>
+                  </div>
+                )}
+
+                {/* כפתורים */}
+                <div className="flex gap-4">
+                  {!showMore && (
+                    <Button onClick={() => setShowMore(true)} variant="outline" className="px-6 py-2">
+                      קראו עוד
+                    </Button>
+                  )}
+                  <Link to={createPageUrl("contact")}>
+                    <Button className="px-6 py-2 bg-primary text-white rounded-full">
+                      יצירת קשר
+                    </Button>
+                  </Link>
+                </div>
               </div>
             </div>
-
+            {/* צד ימין – תמונה */}
             <div className="relative">
               <div className="absolute -inset-12 bg-gradient-to-r from-primary via-secondary to-purple rounded-3xl blur-lg opacity-30"></div>
               <img
@@ -121,7 +155,6 @@ export default function Home() {
           )}
         </div>
       </section>
-
       {/* Services Overview with Clean Cards */}
       <section className="py-20 px-6 bg-gradient-to-br from-gray-50 to-white">
         <div className="max-w-7xl mx-auto">
@@ -130,11 +163,35 @@ export default function Home() {
               תחומי הטיפול שלי
             </h2>
             <p className="text-xl text-gray-600 max-w-3xl mx-auto leading-relaxed">
-              דרכי הטיפולית נשענת על ידע וניסיון רב-תחומי, מהם אני שואבת כלים
-              להתבוננות בביטויים המורכבים של הדיאלוג בין עולמנו הפנימי לגופנו.
+              דרכי הטיפולית נשענת על ידע וניסיון רב-תחומי, מהם אני שואבת כלים להתבוננות בביטויים המורכבים של הדיאלוג בין עולמנו הפנימי לגופנו.
             </p>
           </div>
-          {/* כאן שומרים את ה-ServiceCard כמו שיש לך */}
+          <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+            <ServiceCard
+              icon={Heart}
+              title="טיפול אישי"
+              description="מפגש אישי להתמודדות עם פערים בין העולם הפנימי והחיצוני, דימוי עצמי וגוף והתנהגויות אכילה."
+              link={createPageUrl("individual-therapy")}
+            />
+            <ServiceCard
+              icon={Users}
+              title="טיפול מונחה הורים וטיפול דיאדי"
+              description="ליווי הורים בהבנת עולם ילדיהם וחיזוק הקשר המשפחתי דרך משחק ויצירה."
+              link={createPageUrl("parent-guidance")}
+            />
+            <ServiceCard
+              icon={Brain}
+              title="קליניקה שהיא מרחב"
+              description="מרחב בטוח בו ניתן להניח את המגננות, הציפיות והרעש שמציף, ופשוט להיות."
+              link={createPageUrl("clinic")}
+            />
+            <ServiceCard
+              icon={BookOpen}
+              title="הרצאות וסדנאות"
+              description="מפגשים לצוותי חינוך וטיפול, הורים, מתבגרים והקהל הרחב על הקשר בין גוף לנפש."
+              link={createPageUrl("lectures")}
+            />
+          </div>
         </div>
       </section>
     </>
