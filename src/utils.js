@@ -9,6 +9,5 @@ export function createPageUrl(pageName) {
     Lectures: '/lectures',
     Contact: '/contact'
   };
-
   return pageMap[pageName] || '/';
 }
