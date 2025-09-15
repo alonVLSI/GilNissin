@@ -7,7 +7,6 @@ import About from './pages/About';
 import IndividualTherapy from './pages/IndividualTherapy';
 import ParentGuidance from './pages/parent-guidance';
 import Contact from './pages/Contact';
-import BodyMindTherapy from './pages/BodyMindTherapy';
 import Clinic from './pages/Clinic';
 import Lectures from './pages/lectures';
 
@@ -19,7 +18,6 @@ function App() {
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
           <Route path="/individual-therapy" element={<IndividualTherapy />} />
-          <Route path="/body-mind-therapy" element={<BodyMindTherapy />} />
           <Route path="/clinic" element={<Clinic />} />
           <Route path="/parent-guidance" element={<ParentGuidance />} />
           <Route path="/lectures" element={<Lectures />} />

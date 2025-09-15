@@ -12,7 +12,6 @@ export default function Layout({ children, currentPageName }) {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   
 const navItems = [
-  //{ name: "עמוד הבית", page: "Home" },
   { name: "עליי", page: "About" },
   { name: "הקליניקה", page: "Clinic" },
   { name: "טיפול אישי", page: "IndividualTherapy" },
