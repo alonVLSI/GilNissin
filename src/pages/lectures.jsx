@@ -3,7 +3,7 @@ import { Button } from '../components/ui/button';
 import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
 import { Users, BookOpen, Heart, Brain, Clock, Target } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../components/utils';
+import { createPageUrl } from '../utils';
 
 const LectureCard = ({ lecture }) => (
     <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-12">

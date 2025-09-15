@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../components/utils';
+import { createPageUrl } from '../utils';
 import { Button } from '../components/ui/button';
 import { Heart, Users, Brain, BookOpen, Sparkles } from 'lucide-react';
 

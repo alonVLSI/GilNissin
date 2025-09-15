@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../components/ui/button';
 import { Heart, Users } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../components/utils';
+import { createPageUrl } from '../utils';
 
 export default function ParentGuidance() {
   return (

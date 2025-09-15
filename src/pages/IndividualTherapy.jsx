@@ -2,7 +2,7 @@ import React from 'react';
 import { Button } from '../components/ui/button';
 import { CheckCircle } from 'lucide-react';
 import { Link } from 'react-router-dom';
-import { createPageUrl } from '../components/utils';
+import { createPageUrl } from '../utils';
 
 export default function IndividualTherapy() {
   const topics = [
