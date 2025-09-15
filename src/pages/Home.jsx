@@ -1,7 +1,7 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { createPageUrl } from '../components/utils';
-import { Button } from '../components/ui/cutton';
+import { Button } from '../components/ui/button';
 import { Heart, Users, Brain, BookOpen, Sparkles } from 'lucide-react';
 
 const ServiceCard = ({ icon: Icon, title, description, link }) => (
