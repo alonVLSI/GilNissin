@@ -5,7 +5,9 @@ export function createPageUrl(pageName) {
     'IndividualTherapy': '/individual-therapy',
     'CouplesTherapy': '/couples-therapy',
     'FamilyTherapy': '/family-therapy',
-    'Contact': '/contact'
+    'Contact': '/contact',
+	'ParentGuidance':'/parent-guidance'
+	'Clinic':'/clinic'
   };
   
   return pageMap[pageName] || '/';

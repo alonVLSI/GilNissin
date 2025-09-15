@@ -119,7 +119,7 @@ export default function Home() {
 
               {/* יצירת קשר */}
               <div className="mt-8">
-                <Link to={createPageUrl("contact")}>
+                <Link to={createPageUrl("Contact")}>
                   <Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 py-3 rounded-full">
                     יצירת קשר
                   </Button>
@@ -155,25 +155,25 @@ export default function Home() {
               icon={Heart}
               title="טיפול אישי"
               description="מפגש אישי להתמודדות עם פערים בין העולם הפנימי והחיצוני, דימוי עצמי וגוף והתנהגויות אכילה."
-              link={createPageUrl("individual-therapy")}
+              link={createPageUrl("IndividualTherapy")}
             />
             <ServiceCard
               icon={Users}
               title="טיפול מונחה הורים וטיפול דיאדי"
               description="ליווי הורים בהבנת עולם ילדיהם וחיזוק הקשר המשפחתי דרך משחק ויצירה."
-              link={createPageUrl("parent-guidance")}
+              link={createPageUrl("ParentGuidance")}
             />
             <ServiceCard
               icon={Brain}
               title="קליניקה שהיא מרחב"
               description="מרחב בטוח בו ניתן להניח את המגננות, הציפיות והרעש שמציף, ופשוט להיות."
-              link={createPageUrl("clinic")}
+              link={createPageUrl("Clinic")}
             />
             <ServiceCard
               icon={BookOpen}
               title="הרצאות וסדנאות"
               description="מפגשים לצוותי חינוך וטיפול, הורים, מתבגרים והקהל הרחב על הקשר בין גוף לנפש."
-              link={createPageUrl("lectures")}
+              link={createPageUrl("Lectures")}
             />
           </div>
         </div>
