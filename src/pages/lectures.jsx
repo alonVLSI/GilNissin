@@ -1,160 +1,122 @@
 import React from 'react';
-import { Button } from '../components/ui/button';
-import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/card';
+import { Button } from '../components/ui/Button';
+import { Card, CardContent, CardHeader, CardTitle } from '../components/ui/Card';
 import { Users, BookOpen, Heart, Brain, Clock, Target } from 'lucide-react';
-import WhatsappIcon from '../components/WhatsappIcon';
+import { Link } from 'react-router-dom';
+import { createPageUrl } from '../components/utils';
+
+const LectureCard = ({ lecture }) => (
+    <div className="bg-white border border-gray-200 rounded-lg overflow-hidden mb-12">
+        <div className="p-8">
+            <h3 className="text-2xl font-bold font-serif mb-3">{lecture.title}</h3>
+            <p className="text-teal font-serif mb-4">{lecture.subtitle}</p>
+            <p className="text-light leading-relaxed mb-6">{lecture.description}</p>
+            
+            <h4 className="font-semibold font-serif mb-3">מה בהרצאה?</h4>
+            <ul className="space-y-2 text-light list-disc list-inside mb-6">
+                {lecture.topics.map((topic, i) => <li key={i}>{topic}</li>)}
+            </ul>
+
+            <div className="bg-light-gray p-4 rounded-md text-sm text-light">
+                <p><strong className="font-semibold">קהל יעד:</strong> {lecture.audience}</p>
+                {lecture.special && <p className="mt-2"><strong className="font-semibold">מתכונת:</strong> {lecture.special}</p>}
+            </div>
+        </div>
+    </div>
+);
 
 export default function Lectures() {
   const lectures = [
     {
-      title: "דימוי גוף וביטחון עצמי בעידן הדיגיטלי - מבעד לעדשה",
-      subtitle: "הרצאה להורים לבני ובנות נוער",
-      audience: "הורים לבני ובנות נוער",
-      description: "בעולם שבו המסכים הם המראה החדשה והרשתות החברתיות מציבות סטנדרט של שלמות, בני ובנות נוער מתמודדים עם אתגרים מורכבים בכל הנוגע לדימוי הגוף והערך העצמי שלהם.",
+      title: "מבעד למצלמה: על דימוי גוף וביטחון עצמי בעידן הדיגיטלי",
+      subtitle: "",
+      audience: "הורים, בני ובנות נוער, יועצות וצוותי חינוך",
+      description: "בעידן בו הרשתות החברתיות מציבות סטנדרט של שלמות, בני נוער מתמודדים עם אתגרים מורכבים בכל הנוגע לדימוי הגוף והערך העצמי. הרצאה זו מזמינה הורים ונוער להתבונן פנימה אל עולם הרגשות והמחשבות, ולהבין את ההשפעות הסביבתיות המעצבות אותנו. ההרצאה חושפת את הקשר העמוק בין דימוי גוף לחוסן נפשי, מערכות יחסים בריאות והגשמה אישית.",
       topics: [
-        "כיצד השפה יכולה לבנות ביטחון או לערער אותו",
-        "כלים פרקטיים לחיזוק החוסן הנפשי והביטחון העצמי",
-        "פיתוח חשיבה ביקורתית כלפי רשתות חברתיות",
-        "שיפור השיח המשפחתי וטיפוח דימוי עצמי חיובי"
-      ],
-      icon: Users
+        "הבנה מעמיקה של האופן שבו השפה מעצבת ביטחון עצמי",
+        "הקניית כלים מעשיים לחיזוק החוסן הנפשי מול אידיאל יופי לא מציאותי",
+        "פיתוח חשיבה ביקורתית כלפי המסרים הסמויים ברשתות החברתיות"
+      ]
     },
     {
-      title: "לא על הרעב לבדו: על הקשר בין רגש, אוכל וגוף",
-      subtitle: "הבנת האכילה הרגשית",
-      audience: "קהל רחב ואנשי מקצוע בתחום הטיפול",
-      description: "במציאות דינמית וגדושת רגשות, האוכל הופך לעיתים קרובות למקור של נחמה, אך במקביל גם לזירה של קונפליקטים פנימיים. מערכת היחסים עם האוכל ועם הגוף עלולה להפוך למורכבת, למאבק מתמיד בין צרכים רגשיים לגיטימיים לבין נורמות חברתיות.",
+      title: "על אש קטנה: על מערכות-היחסים הנרקמות בין אוכל, זיכרון ורגש",
+      subtitle: "",
+      audience: "הקהל הרחב, אנשי ונשות טיפול",
+      description: "מערכת-היחסים עם אוכל ועם גוף עלולה להפוך למאבק מתמיד. הרצאה זו צוללת אל הקשר המשולש שבין רגש, אוכל וגוף, ומציעה לראות בו הזדמנות לחיים מלאים והרמוניים. במקום להילחם באכילה הרגשית, ההרצאה מזמינה להכיר בה כמענה לצורך עמוק, ולגלות את הסיפורים והרגשות החבויים מאחורי דפוסי האכילה, מתוך התבוננות עדינה ונטולת שיפוטיות.",
       topics: [
-        "הקשר העמוק והמשולש שבין רגש, אוכל וגוף",
-        "הכרה באכילה הרגשית כמענה לצורך עמוק",
-        "התבוננות עדינה ונטולת שיפוטיות",
-        "גילוי הסיפורים והצרכים מאחורי דפוסי האכילה"
+        "הבנת המניעים הרגשיים העומדים בבסיס דפוסי אכילה",
+        "לימוד הקשבה לצרכים העמוקים שהבחירות באוכל מייצגות",
+        "התייחסות ופענוח המושג \"אכילה רגשית\"",
+        "הפניית המבט ממאבק להתבוננות, קבלה וחמלה"
       ],
-      icon: Heart
+      special: "מומלצת במיוחד מתכונת של סדנה בקבוצה אינטימית הכוללת 5 מפגשים חווייתיים ומעצימים"
     },
     {
-      title: "מארג הקשר: עיצוב ההתפתחות הרגשית בגיל הרך",
-      subtitle: "תיאוריית ההתקשרות ומעשיות יומיומית",
-      audience: "צוותי חינוך, גננות, מטפלות ומשפחות",
-      description: "מערכת היחסים הראשונית בין ילדים לדמויות המטפלות המרכזיות בחייהם מהווה את אבן הפינה להתפתחותם הרגשית. כל אינטראקציה, בין אם שגרתית ובין אם מכוננת, תורמת לעיצוב תחושת הביטחון, הערך העצמי והחוסן הנפשי.",
+      title: "בראי היחסים: על הקשר שבין יחסים ראשוניים והתהוות העצמי",
+      subtitle: "",
+      audience: "אנשי ונשות טיפול, יועצות וצוותי חינוך לגיל הרך",
+      description: "תחושת הערך והביטחון של ילדים נבנית דרך מערכות-היחסים המשמעותיות ביותר בחייהם. האופן בו אנו כהורים ואנשי חינוך רואים אותם, מקשיבים להם, ומגיבים לצרכיהם, יוצר את ההשתקפות הראשונה בה הם לומדים להכיר את עצמם. הרצאה זו מפנה מבט אל תוך תהליך ההתהוות של העצמי ונוגעת בתיאוריית \"פסיכולוגיית העצמי\" של היינץ קוהוט.",
       topics: [
-        "בחינת דפוסים בין-דוריים והשפעתם על עיצוב הקשר",
-        "העמקת ההבנה במניעים הרגשיים של התנהגויות ילדים",
-        "ניתוח אינטראקציות יומיומיות ככלי לביסוס מערכת יחסים תומכת",
-        "כלים לטיפוח סביבה המאפשרת צמיחה ומימוש פוטנציאל"
-      ],
-      icon: Brain
+        "התייחסות לשלושה צרכים נפשיים מרכזיים בבניית העצמי המתפתח: שיקוף (Mirroring), האדרה (Idealizing), תאומות (Twinship)",
+        "ההרצאה מציעה מסגרת יישומית עבור אנשי ונשות מקצוע, המאפשרת לזקק ולדייק את הגישה הטיפולית והחינוכית",
+        "פיתוח כלים מעשיים לטיפוח עצמי בריא, חיוני וחסין בקרב ילדים ומטופלים"
+      ]
     },
     {
-      title: "שקר החן והבל היופי: מפגשים על דימוי גוף, בחירה וחמלה עצמית",
-      subtitle: "סדרת הרצאות למבוגרות",
-      audience: "נשים מבוגרות",
-      description: "סדרת הרצאות הבוחנת את התחושה המתמדת של חוסר שביעות רצון מהמראה החיצוני, חוויה המוכרת לנשים רבות. היא מתחילה במבט חטוף במראה שהופך לביקורת נוקבת, וממשיכה בהשוואה בלתי פוסקת לאידיאלים של יופי.",
+      title: "בשוליי הטקסט-גוף: סדרת מפגשים המזמינה למבט חדש על השיח החברתי ודימוי הגוף הנשי",
+      subtitle: "",
+      audience: "הקהל הרחב, נשים, יועצות חינוכיות, צוותי חינוך וטיפול",
+      description: "סדרת מפגשים לנשים הבוחנת את חוסר שביעות הרצון מהמראה החיצוני כתופעה חברתית רחבה - \"מיתוס היופי\". הסדנה מנתחת כיצד מנגנון כלכלי ותרבותי זה דוחף נשים למרדף אחר שלמות, ונוגעת במתח שבין הרצון לאותנטיות לבין הפחד להישאר בחוץ. הסדנה מציעה גישה של גמישות, חמלה ובחירה מודעת, ומטרתה להשיב את תחושת השליטה לידי המשתתפות, ולאפשר להן לבחור מתי וכיצד להשתתף בכללי המשחק החברתיים.",
       topics: [
-        "ניתוח 'מיתוס היופי' כמנגנון כלכלי ותרבותי",
-        "המתח בין הרצון למרוד לבין הפחד להישאר מחוץ למעגל החברתי",
-        "גישה של גמישות, חמלה ובחירה מודעת",
-        "השבת תחושת הסובייקטיביות והשליטה"
+        "ניתוח \"מיתוס היופי\" והשפעתו על חיינו",
+        "חקירת המתח בין אותנטיות לצורך בשייכות",
+        "פיתוח כלים לחמלה עצמית ובחירה מודעת"
       ],
-      icon: Target,
-      special: "סדרה של 2 מפגשים, כל מפגש 2 שעות אקדמיות"
+      special: "סדרה של שני מפגשים, המשלבים ניתוח תיאורטי, דוגמאות ושיח פתוח"
     }
   ];
 
   return (
-    <div className="py-20 px-6 bg-stone-100/70">
-      <div className="max-w-7xl mx-auto">
+    <div className="py-20 px-6">
+      <div className="max-w-5xl mx-auto">
         <div className="text-center mb-16">
-          <h1 className="text-5xl font-bold text-gray-900 mb-4">הרצאות וסדנאות</h1>
-          <p className="text-xl text-orange-600 mb-6">לצוותי חינוך וטיפול, להורים, למתבגרים ולקהל הרחב</p>
-          <p className="text-lg text-gray-600 max-w-4xl mx-auto">
-            הרצאות וסדנאות הבוחנות את השזירה העדינה בין חוויות אישיות, התפתחות רגשית, תפיסת העצמי וביטוייהם בגוף. המפגשים משלבים ידע תיאורטי וכלים מעשיים.
+          <h1 className="text-5xl font-bold font-serif mb-4">הרצאות וסדנאות</h1>
+          <img 
+            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/685460385c43172cc453b6ea/4cefc7785_.jpg"
+            alt="מעוף ציפורים"
+            className="w-full max-w-md mx-auto rounded-lg mb-8"
+          />
+          <p className="text-xl text-light max-w-4xl mx-auto leading-relaxed mb-8">
+            אני מציעה הרצאות וסדנאות המיועדות לצוותי חינוך וטיפול, הורים, מתבגרים והקהל הרחב. המפגשים בוחנים את הקשר המורכב בין חוויות אישיות, התפתחות רגשית, תפיסת העצמי וביטוייהם בגוף, תוך שילוב ידע תיאורטי וכלים מעשיים.
           </p>
-        </div>
-
-        <div className="grid gap-8 mb-16">
-          {lectures.map((lecture, index) => (
-            <Card key={index} className="bg-white shadow-lg border-stone-200 hover:shadow-xl transition-shadow">
-              <CardHeader>
-                <div className="flex items-start gap-4">
-                  <div className="bg-gradient-to-br from-teal-100 to-orange-100 rounded-full p-3">
-                    <lecture.icon className="w-8 h-8 text-teal-600" />
-                  </div>
-                  <div className="flex-1">
-                    <CardTitle className="text-2xl font-bold text-gray-900 mb-2">
-                      {lecture.title}
-                    </CardTitle>
-                    <p className="text-lg text-orange-600 font-medium mb-2">
-                      {lecture.subtitle}
-                    </p>
-                    <p className="text-sm text-gray-600 bg-gray-100 inline-block px-3 py-1 rounded-full">
-                      קהל יעד: {lecture.audience}
-                    </p>
-                  </div>
-                </div>
-              </CardHeader>
-              <CardContent>
-                <p className="text-gray-700 leading-relaxed mb-6">
-                  {lecture.description}
-                </p>
-                <div className="mb-6">
-                  <h4 className="font-semibold text-gray-900 mb-3">נושאי ההרצאה המרכזיים:</h4>
-                  <ul className="space-y-2">
-                    {lecture.topics.map((topic, topicIndex) => (
-                      <li key={topicIndex} className="flex items-start">
-                        <div className="w-2 h-2 bg-teal-600 rounded-full mt-2 ml-3 flex-shrink-0"></div>
-                        <span className="text-gray-700">{topic}</span>
-                      </li>
-                    ))}
-                  </ul>
-                </div>
-                {lecture.special && (
-                  <div className="bg-orange-50 p-4 rounded-lg">
-                    <p className="text-orange-800 font-medium">{lecture.special}</p>
-                  </div>
-                )}
-              </CardContent>
-            </Card>
-          ))}
-        </div>
-
-        <div className="bg-gradient-to-br from-teal-50 to-orange-50 p-8 rounded-2xl mb-12">
-          <h2 className="text-3xl font-bold text-gray-900 mb-8 text-center">מתכונות הפעילות</h2>
-          
-          <div className="grid md:grid-cols-2 gap-8">
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <BookOpen className="w-8 h-8 text-teal-600" />
-                <h3 className="text-xl font-bold text-gray-900">הרצאות</h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                ניתן לקיים כמפגש חד-פעמי או כסדרת מפגשים מובנית. המפגשים משלבים ידע מקצועי, דוגמאות אקטואליות וקטעי מדיה, ומעודדים שיח פתוח והעלאת שאלות.
-              </p>
-            </div>
-
-            <div className="bg-white p-6 rounded-xl shadow-lg">
-              <div className="flex items-center gap-3 mb-4">
-                <Clock className="w-8 h-8 text-orange-600" />
-                <h3 className="text-xl font-bold text-gray-900">סדנאות</h3>
-              </div>
-              <p className="text-gray-700 leading-relaxed">
-                סדרה של 4 עד 6 מפגשים המאפשרת תהליך מעמיק וחווייתי. הסדנאות כוללות תרגילים מעשיים, דיונים קבוצתיים ותהליכי התבוננות אישיים.
-              </p>
-            </div>
+          <p className="text-lg text-light max-w-3xl mx-auto mb-8">
+            ההרצאות והסדנאות שופכות אור על האופן שבו חוויותינו מושפעות מהשיח החברתי ומהצורך האנושי בשייכות. ניתן לבחור באחד מהנושאים הבאים או להתאים תוכן ייעודי עבורכם.
+          </p>
+          <div className="bg-light-gray p-6 rounded-lg text-center">
+            <h3 className="text-xl font-serif mb-4">פורמטים זמינים</h3>
+            <p className="text-light">
+              <strong>הרצאה:</strong> מפגש חד-פעמי, או סדרת מפגשים מובנית<br/>
+              <strong>סדנה:</strong> תהליך חווייתי ומעמיק הכולל 4 עד 6 מפגשים
+            </p>
           </div>
         </div>
 
-        <div className="bg-white p-8 rounded-2xl shadow-lg border border-stone-200 text-center">
-          <h3 className="text-2xl font-bold text-gray-900 mb-4">התאמה אישית</h3>
-          <p className="text-lg text-gray-700 mb-6 max-w-3xl mx-auto">
-            ניתן להתאים את התכנים לצרכים הייחודיים שלכם, לקבוצות שונות ולקיים את הפעילות במגוון מתכונות. התכנים מתאימים גם ליועצות חינוכיות, לצוותי חינוך והדרכה, ועוברים התאמה ייעודית עבורם.
-          </p>
-          <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
-            <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white text-lg">
-              <WhatsappIcon className="w-5 h-5 ml-2" />
-              לקביעת הרצאה או סדנה
-            </Button>
-          </a>
+        <div className="space-y-8">
+          {lectures.map((lecture, index) => (
+            <LectureCard key={index} lecture={lecture} />
+          ))}
+        </div>
+
+        <div className="text-center bg-light-gray p-10 rounded-lg">
+            <h2 className="text-3xl font-serif mb-4">מעוניינים בהרצאה או סדנה?</h2>
+            <p className="text-lg text-light max-w-2xl mx-auto mb-6">
+                כל אחד מן התכנים מותאם לקהל היעד. ניתן להתאים את התכנים לצרכים הייחודיים שלכם.
+            </p>
+            <Link to={createPageUrl("contact")}>
+                <Button size="lg" className="bg-teal hover:bg-opacity-90 text-white">
+                    יצירת קשר
+                </Button>
+            </Link>
         </div>
       </div>
     </div>

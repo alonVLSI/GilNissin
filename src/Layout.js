@@ -27,151 +27,194 @@ const navItems = [
   };
 
   return (
-    <div className="min-h-screen bg-stone-50 font-sans" dir="rtl">
-      {/* Navigation */}
-      <nav className="fixed top-0 w-full bg-white/95 backdrop-blur-sm border-b border-stone-200 z-50">
-        <div className="max-w-7xl mx-auto px-6 py-3">
-          <div className="flex justify-between items-center">
-            <Link to={createPageUrl("Home")} className="flex items-center gap-3 text-xl md:text-2xl font-bold text-teal-700">
-              <img 
-                src={logoImg}
-                alt="לוגו - גיל ברדוגו נסים" 
-                className="w-12 h-12 md:w-16 md:h-16 rounded-full object-cover border-2 border-teal-200" 
-              />
-              <span className="hidden sm:block">גיל ברדוגו נסים</span>
-            </Link>
+    <>
+      <style>{`
+        @import url('https://fonts.googleapis.com/css2?family=Heebo:wght@300;400;600;700;800&family=Playfair+Display:wght@400;600;700&display=swap');
+        
+        body {
+          background: linear-gradient(135deg, #ffffff 0%, #fef7f0 100%);
+          color: #2d3748;
+          font-family: 'Heebo', sans-serif;
+          line-height: 1.6;
+        }
 
-            {/* Desktop Navigation */}
-            <div className="hidden md:flex gap-8 items-center">
-              {navItems.map((item) => (
-                <Link
-                  key={item.page}
-                  to={createPageUrl(item.page)}
-                  className={`pb-1 border-b-2 transition-colors duration-300 ${
-                    location.pathname === createPageUrl(item.page)
-                      ? 'text-teal-700 border-teal-700'
-                      : 'text-gray-600 border-transparent hover:text-teal-700'
-                  }`}
-                >
-                  {item.name}
-                </Link>
-              ))}
-            </div>
+        h1, h2, h3, h4, .font-serif {
+          font-family: 'Playfair Display', serif;
+          font-weight: 600;
+        }
 
-            {/* Mobile Center - WhatsApp Button */}
-            <div className="md:hidden">
-              <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
-                <Button size="sm" className="bg-green-500 hover:bg-green-600 text-white px-3 py-2">
-                  <WhatsappIcon className="w-4 h-4" />
-                </Button>
-              </a>
-            </div>
+        .text-primary { color: #ff6b35; }
+        .bg-primary { background-color: #ff6b35; }
+        .border-primary { border-color: #ff6b35; }
+        
+        .text-secondary { color: #4ecdc4; }
+        .bg-secondary { background-color: #4ecdc4; }
+        .border-secondary { border-color: #4ecdc4; }
 
-            {/* Desktop WhatsApp Button */}
-            <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer" className="hidden md:block">
-              <Button className="bg-green-500 hover:bg-green-600 text-white">
-                <WhatsappIcon className="w-5 h-5 ml-2" />
-                לשליחת הודעה
-              </Button>
-            </a>
+        .text-accent { color: #ffd23f; }
+        .bg-accent { background-color: #ffd23f; }
+        
+        .text-purple { color: #9b59b6; }
+        .bg-purple { background-color: #9b59b6; }
 
-            {/* Mobile Menu Button */}
-            <button
-              onClick={toggleMobileMenu}
-              className="md:hidden p-2 rounded-lg text-gray-600 hover:text-teal-700 hover:bg-teal-50 transition-colors"
-              aria-label="תפריט"
-            >
-              {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
-            </button>
-          </div>
+        .gradient-bg {
+          background: linear-gradient(135deg, #ff6b35 0%, #f7931e 25%, #4ecdc4 50%, #9b59b6 75%, #ff6b35 100%);
+          background-size: 400% 400%;
+          animation: gradient-shift 8s ease-in-out infinite;
+        }
 
-          {/* Mobile Menu */}
-          {isMobileMenuOpen && (
-            <div className="md:hidden absolute top-full left-0 right-0 bg-white border-b border-stone-200 shadow-lg">
-              <div className="px-6 py-4 space-y-4">
+        @keyframes gradient-shift {
+          0%, 100% { background-position: 0% 50%; }
+          50% { background-position: 100% 50%; }
+        }
+
+        .hover-lift {
+          transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        
+        .hover-lift:hover {
+          transform: translateY(-8px);
+          box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+        }
+      `}</style>
+      <div className="min-h-screen" dir="rtl">
+        {/* Navigation */}
+        <nav className="sticky top-0 w-full bg-white/95 backdrop-blur-md border-b-4 border-primary z-50">
+          <div className="max-w-7xl mx-auto px-6">
+            <div className="flex justify-between items-center h-24">
+              <Link to={createPageUrl("Home")} className="flex items-center gap-3 hover-lift">
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7413e4a01_WhatsAppImage2025-07-01at143149.jpeg" 
+                  alt="לוגו - גיל ברדוגו נסים" 
+                  className="w-20 h-20 object-contain rounded-full" 
+                />
+              </Link>
+
+              {/* Desktop Navigation */}
+              <div className="hidden lg:flex gap-8 items-center">
                 {navItems.map((item) => (
                   <Link
                     key={item.page}
                     to={createPageUrl(item.page)}
-                    onClick={() => setIsMobileMenuOpen(false)}
-                    className={`block py-2 px-4 rounded-lg transition-colors ${
+                    className={`text-base font-semibold tracking-wide transition-all duration-300 hover:scale-105 ${
                       location.pathname === createPageUrl(item.page)
-                        ? 'text-teal-700 bg-teal-50'
-                        : 'text-gray-600 hover:text-teal-700 hover:bg-teal-50'
+                        ? 'text-primary border-b-2 border-primary'
+                        : 'text-gray-700 hover:text-primary'
                     }`}
                   >
                     {item.name}
                   </Link>
                 ))}
               </div>
+
+              {/* Mobile Menu Button */}
+              <div className="lg:hidden">
+                <button
+                  onClick={toggleMobileMenu}
+                  className="p-2 rounded-md text-gray-600 hover:text-primary"
+                  aria-label="תפריט"
+                >
+                  {isMobileMenuOpen ? <X className="w-6 h-6" /> : <Menu className="w-6 h-6" />}
+                </button>
+              </div>
+
+              {/* Desktop CTA Button */}
+              <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer" className="hidden lg:block">
+                <Button className="bg-gradient-to-r from-primary to-secondary text-white font-bold px-6 py-3 rounded-full hover-lift">
+                  יצירת קשר
+                </Button>
+              </a>
+            </div>
+          </div>
+
+          {/* Mobile Menu */}
+          {isMobileMenuOpen && (
+            <div className="lg:hidden absolute top-full left-0 right-0 bg-white/95 backdrop-blur-md border-b-4 border-secondary shadow-xl">
+              <div className="px-6 py-4 space-y-2">
+                {navItems.map((item) => (
+                  <Link
+                    key={item.page}
+                    to={createPageUrl(item.page)}
+                    onClick={() => setIsMobileMenuOpen(false)}
+                    className={`block py-3 px-4 text-center text-lg rounded-lg font-semibold transition-colors ${
+                      location.pathname === createPageUrl(item.page)
+                        ? 'text-white bg-primary'
+                        : 'text-gray-700 hover:text-primary hover:bg-orange-50'
+                    }`}
+                  >
+                    {item.name}
+                  </Link>
+                ))}
+                <div className="pt-4">
+                  <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer" className="block">
+                    <Button className="bg-gradient-to-r from-primary to-secondary text-white font-bold w-full py-3 rounded-full">
+                      <WhatsappIcon className="w-5 h-5 ml-2" />
+                      יצירת קשר בוואטסאפ
+                    </Button>
+                  </a>
+                </div>
+              </div>
             </div>
           )}
-        </div>
-      </nav>
+        </nav>
 
-      {/* Main Content with top padding for fixed header */}
-      <main className="pt-20">
-        {children}
-      </main>
+        {/* Main Content */}
+        <main>
+          {children}
+        </main>
 
-      {/* Footer */}
-      <footer className="bg-gray-800 text-white py-12">
-        <div className="max-w-7xl mx-auto px-6">
-          <div className="grid md:grid-cols-3 gap-8">
-            <div>
-              <h3 className="text-2xl font-bold mb-4">גיל ברדוגו נסים</h3>
-              <p className="text-gray-300 leading-relaxed">
-                פסיכותרפיה המשלבת גוף ונפש, בדרך לחיים מאוזנים ומשמעותיים יותר.
-              </p>
-            </div>
-            <div>
-              <h4 className="font-semibold text-gray-100 mb-4">קישורים מהירים</h4>
-              <div className="space-y-2">
-                {navItems.map(item => (
-                   <div key={item.page}>
-                    <Link to={createPageUrl(item.page)} className="text-gray-300 hover:text-teal-400 transition-colors">
-                      {item.name}
-                    </Link>
-                   </div>
-                ))}
+        {/* Footer */}
+        <footer className="gradient-bg text-white">
+          <div className="max-w-7xl mx-auto px-6 py-16">
+            <div className="grid md:grid-cols-3 gap-12 text-center md:text-right">
+              <div className="md:col-span-1">
+                <img 
+                  src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7413e4a01_WhatsAppImage2025-07-01at143149.jpeg" 
+                  alt="לוגו גיל ברדוגו נסים"
+                  className="w-24 h-24 mx-auto md:mx-0 mb-4 rounded-full"
+                />
+                <h3 className="text-2xl font-bold font-serif">גיל בֶּרדוגו נסים</h3>
+                <p className="text-white/90 text-lg">פסיכותרפיה משלבת גוף-נפש</p>
+              </div>
+              
+              <div>
+                <h4 className="text-xl font-semibold font-serif mb-6">ניווט מהיר</h4>
+                <ul className="space-y-3">
+                  {navItems.slice(1).map((item, index) => (
+                    <li key={index}>
+                      <Link to={createPageUrl(item.page)} className="text-white/90 hover:text-white transition-colors text-lg">
+                        {item.name}
+                      </Link>
+                    </li>
+                  ))}
+                </ul>
+              </div>
+              
+              <div>
+                <h4 className="text-xl font-semibold font-serif mb-6">יצירת קשר</h4>
+                <div className="space-y-4">
+                  <div className="flex items-center justify-center md:justify-start gap-3 text-white/90">
+                    <Phone className="w-5 h-5" />
+                    <a href="tel:+972544276648" className="hover:text-white text-lg">054-4276648</a>
+                  </div>
+                  <div className="flex items-center justify-center md:justify-start gap-3 text-white/90">
+                    <Mail className="w-5 h-5" />
+                    <a href="mailto:gil.psychotherapy@gmail.com" className="hover:text-white text-lg">gil.psychotherapy@gmail.com</a>
+                  </div>
+                  <div className="flex items-center justify-center md:justify-start gap-3 text-white/90">
+                    <MapPin className="w-5 h-5" />
+                    <span className="text-lg">מזכרת בתיה</span>
+                  </div>
+                </div>
               </div>
             </div>
-            <div>
-              <h4 className="font-semibold text-gray-100 mb-4">פרטי התקשרות</h4>
-              <div className="space-y-3 text-gray-300">
-                <div className="flex items-center gap-3">
-                    <Phone className="w-5 h-5 text-teal-400" />
-                    <span>054-427-6648</span>
-                </div>
-                 <div className="flex items-center gap-3">
-                    <Mail className="w-5 h-5 text-teal-400" />
-                    <span>gil@therapy.co.il</span>
-                </div>
-                 <div className="flex items-center gap-3">
-                    <MapPin className="w-5 h-5 text-teal-400" />
-                    <span>רחוב הרצל 15, תל אביב</span>
-                </div>
-              </div>
+            
+            <div className="border-t border-white/20 mt-12 pt-8 text-center text-white/80">
+              <p className="text-lg">&copy; {new Date().getFullYear()} גיל בֶּרדוגו נסים. כל הזכויות שמורות.</p>
             </div>
           </div>
-          <div className="mt-12 text-center">
-            <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
-                <Button className="bg-green-500 hover:bg-green-600 text-white px-8 py-3 text-lg">
-                  <WhatsappIcon className="w-5 h-5 ml-2" />
-                  לשליחת הודעה
-                </Button>
-            </a>
-          </div>
-          <div className="border-t border-gray-700 mt-8 pt-8 text-center text-gray-400">
-            <img 
-              src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7413e4a01_WhatsAppImage2025-07-01at143149.jpeg" 
-              alt="לוגו גיל ברדוגו נסים"
-              className="w-24 h-24 mx-auto mb-4 rounded-full border-2 border-gray-600"
-            />
-            <p>&copy; 2025 גיל ברדוגו נסים - פסיכותרפיה גוף-נפש. כל הזכויות שמורות.</p>
-          </div>
-        </div>
-      </footer>
-    </div>
+        </footer>
+      </div>
+    </>
   );
 }
