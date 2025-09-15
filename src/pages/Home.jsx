@@ -71,20 +71,6 @@ export default function Home() {
                     </p>
                   </div>
                 )}
-
-                {/* כפתורים */}
-                <div className="flex gap-4">
-                  {!showMore && (
-                    <Button onClick={() => setShowMore(true)} variant="outline" className="px-6 py-2">
-                      קראו עוד
-                    </Button>
-                  )}
-                  <Link to={createPageUrl("contact")}>
-                    <Button className="px-6 py-2 bg-primary text-white rounded-full">
-                      יצירת קשר
-                    </Button>
-                  </Link>
-                </div>
               </div>
             </div>
             {/* צד ימין – תמונה */}
@@ -114,9 +100,6 @@ export default function Home() {
             קשב רב לשיח פנימי זה, מתוך הבנה שהגוף אינו כלי קיבול פסיבי, אלא שותף
             פעיל הנושא זיכרונות, חוויות ותחושות.
           </p>
-
-          {showMore && (
-            <>
               <p className="text-xl text-gray-700 leading-relaxed font-medium mb-6">
                 הקשבה מעמיקה זו מאפשרת לכל חלקי העצמי לקבל מקום והכרה, תוך טיפוח
                 חמלה ורגישות. דרכי הטיפולית נשענת על ידע וניסיון רב-תחומי, מהם אני
@@ -127,6 +110,9 @@ export default function Home() {
                 הגישה הפסיכודינמית מהווה עבורי עוגן, המאפשר לחבר את כלל הרכיבים
                 ולחקור בעדינות את המשמעויות העמוקות, ולעיתים הלא-מודעות, הטמונות
                 בסיפורים שהגוף מספר.
+          {showMore && (
+            <>
+
               </p>
               <p className="text-xl text-gray-700 leading-relaxed font-medium mb-6">
                 האם קרה לכם פעם שהרגשתם את הגוף מנסה לספר לכם משהו? האם חשתם שהכתפיים
