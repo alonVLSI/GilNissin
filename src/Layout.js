@@ -13,7 +13,6 @@ export default function Layout({ children, currentPageName }) {
   
 const navItems = [
   //{ name: "עמוד הבית", page: "Home" },
-  { name: "פסיכותרפיית גוף-נפש", page: "BodyMindTherapy" },
   { name: "עליי", page: "About" },
   { name: "הקליניקה", page: "Clinic" },
   { name: "טיפול אישי", page: "IndividualTherapy" },

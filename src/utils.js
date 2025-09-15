@@ -4,7 +4,6 @@ export function createPageUrl(pageName) {
     About: '/about',
     IndividualTherapy: '/individual-therapy',
     ParentGuidance: '/parent-guidance',
-    BodyMindTherapy: '/body-mind-therapy',
     Clinic: '/clinic',
     Lectures: '/lectures',
     Contact: '/contact'
