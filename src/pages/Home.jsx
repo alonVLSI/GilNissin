@@ -4,6 +4,20 @@ import { createPageUrl } from '../components/utils';
 import { Button } from '../components/ui/button';
 import { Heart, Users, Brain, BookOpen, Sparkles } from 'lucide-react';
 
+const ServiceCard = 
+({ icon: Icon, title, description, link }) => 
+( <div className="bg-white p-8 rounded-2xl shadow-lg border border-gray-100 hover-lift transform transition-all duration-300 hover:scale-105 hover:shadow-xl"> 
+<div className="text-center"> 
+<div className="mx-auto w-16 h-16 rounded-full flex items-center justify-center mb-6 bg-gray-50"> 
+<Icon className="w-8 h-8 text-primary" /> 
+</div> <h3 className="text-2xl font-bold font-serif mb-4 text-gray-900">{title}</h3> 
+<p className="text-gray-600 mb-6 leading-relaxed">{description}</p> <Link to={link}> 
+<Button className="bg-primary hover:bg-primary/90 text-white font-bold px-6 py-2 rounded-full"> למידע נוסף </Button> 
+</Link> 
+</div> 
+</div> 
+);
+
 export default function Home() {
   const [showMore, setShowMore] = useState(false);
 
