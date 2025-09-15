@@ -1,5 +1,5 @@
 import React from 'react';
-import { Button } from '../components/ui/Button';
+import { Button } from '../components/ui/button';
 import { createPageUrl } from '../components/utils';
 import { Link } from 'react-router-dom';
 
