@@ -34,14 +34,17 @@ export default function Clinic() {
               className="rounded-lg w-full"
             />
           </div>
+		          <div className="text-center mt-16">
+          <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-green-700 hover:bg-green-800 text-white text-lg rounded-xl shadow-md px-8"
+            >
+              <WhatsappIcon className="w-5 h-5 ml-2" />
+              לתיאום פגישה
+            </Button>
+          </a>
         </div>
-
-        <div className="text-center">
-            <Link to={createPageUrl("contact")}>
-                <Button size="lg" className="bg-teal hover:bg-opacity-90 text-white">
-                    יצירת קשר
-                </Button>
-            </Link>
         </div>
       </div>
     </div>

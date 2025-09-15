@@ -29,12 +29,17 @@ export default function FamilyTherapy() {
             <p className="text-lg text-gray-700 leading-relaxed mb-8">
               במפגשים המשפחתיים, ניתן לכל אחד את המקום לבטא את עצמו, ונלמד יחד לזהות את הדינמיקה המשפחתית, לחזק את נקודות החוזק שלה ולהתמודד עם האתגרים בצורה בונה ומקרבת.
             </p>
-            <a href="https://wa.me/972521234567" target="_blank" rel="noopener noreferrer">
-              <Button size="lg" className="bg-green-500 hover:bg-green-600 text-white text-lg">
-                <WhatsappIcon className="w-5 h-5 ml-2" />
-                לשליחת הודעה
-              </Button>
-            </a>
+        <div className="text-center mt-16">
+          <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
+            <Button
+              size="lg"
+              className="bg-green-700 hover:bg-green-800 text-white text-lg rounded-xl shadow-md px-8"
+            >
+              <WhatsappIcon className="w-5 h-5 ml-2" />
+              לתיאום פגישה
+            </Button>
+          </a>
+        </div>
           </div>
           <div>
             <div className="bg-white p-8 rounded-xl shadow-lg border border-stone-200">

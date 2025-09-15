@@ -121,7 +121,7 @@ const navItems = [
               {/* Desktop CTA Button */}
               <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer" className="hidden lg:block">
                 <Button className="bg-gradient-to-r from-primary to-secondary text-white font-bold px-6 py-3 rounded-full hover-lift">
-                  יצירת קשר
+                                 וואסטאפ <WhatsappIcon className="w-5 h-5 ml-2" />
                 </Button>
               </a>
             </div>
