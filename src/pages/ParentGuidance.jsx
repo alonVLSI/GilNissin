@@ -1,8 +1,6 @@
 
 import React from 'react';
 import { Button } from '../components/ui/button';
-import { Link } from 'react-router-dom';
-import { createPageUrl } from '../components/utils';
 import WhatsappIcon from '../components/WhatsappIcon';
 
 export default function ParentGuidance() {
