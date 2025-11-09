@@ -39,7 +39,7 @@ const Clinic = () => {
         {/* תמונה */}
         <div className="flex items-stretch">
           <img
-            src="{clinicImage}"
+            src= {clinicImage}
             alt="קליניקה"
             className="w-full h-full object-cover shadow-md"
           />
