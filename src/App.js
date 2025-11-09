@@ -5,7 +5,7 @@ import Layout from './Layout';
 import Home from './pages/Home';
 import About from './pages/About';
 import IndividualTherapy from './pages/IndividualTherapy';
-import ParentGuidance from './pages/parent-guidance';
+import ParentGuidance from './pages/ParentGuidance';
 import Contact from './pages/Contact';
 import Clinic from './pages/Clinic';
 import Lectures from './pages/lectures';
@@ -17,9 +17,9 @@ function App() {
         <Routes>
           <Route path="/" element={<Home />} />
           <Route path="/about" element={<About />} />
-          <Route path="/individual-therapy" element={<IndividualTherapy />} />
+          <Route path="/IndividualTherapy" element={<IndividualTherapy />} />
           <Route path="/clinic" element={<Clinic />} />
-          <Route path="/parent-guidance" element={<ParentGuidance />} />
+          <Route path="/ParentGuidance" element={<ParentGuidance />} />
           <Route path="/lectures" element={<Lectures />} />
           <Route path="/contact" element={<Contact />} />
         </Routes>
