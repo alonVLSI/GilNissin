@@ -2,6 +2,8 @@
 import React from "react";
 import { Button } from "../components/ui/button";
 import WhatsappIcon from "../components/WhatsappIcon";
+import clinicImage from "../images/Clinic.jpg";
+
 
 const Clinic = () => {
   return (
@@ -37,7 +39,7 @@ const Clinic = () => {
         {/* תמונה */}
         <div className="flex items-stretch">
           <img
-            src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/685460385c43172cc453b6ea/0ba430967_.jpg"
+            src="{clinicImage}"
             alt="קליניקה"
             className="w-full h-full object-cover shadow-md"
           />
