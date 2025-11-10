@@ -48,7 +48,7 @@ export default function SEO() {
       metaKeywords.name = 'keywords';
       document.head.appendChild(metaKeywords);
     }
-    metaKeywords.content = 'פסיכותרפיה, טיפול אישי, טיפול מונחה הורים, דימוי גוף, דימוי עצמי, התנהגויות אכילה, גיל ברדוגו נסים, מזכרת בתיה, פסיכותרפיה פסיכודינמית, גוף נפש, טיפול דיאדי, הרצאות הורים';
+metaKeywords.content = 'פסיכותרפיה, טיפולי, טיפול אישי, טיפול מונחה הורים,  דימוי גוף, דימוי עצמי, התנהגויות אכילה, גיל ברדוגו נסים, מזכרת בתיה, פסיכותרפיה פסיכודינמית, גוף נפש, טיפול דיאדי, הרצאות הורים';
 
     // Helper function to update or create meta tags
     const updateOrCreateMetaTag = (property, content) => {

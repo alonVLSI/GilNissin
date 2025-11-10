@@ -41,6 +41,7 @@ export default function Home() {
             <h2 className="text-xl md:text-2xl text-secondary font-medium">
               פסיכותרפיה משלבת גוף נפש
             </h2>
+			<h2 className="sr-only">פסיכותרפיה משלבת גוף ונפש במזכרת בתיה</h2>
 
             <p className="text-lg text-gray-700 leading-relaxed max-w-4xl text-justify">
               <strong>פסיכותרפיה המשלבת גוף-נפש</strong>{" "}
@@ -160,6 +161,8 @@ export default function Home() {
             <h2 className="text-3xl font-semibold text-gray-900 mb-4">
               תחומי הטיפול שלי
             </h2>
+			<h3 className="sr-only">תחומי טיפול: טיפול אישי, טיפול מונחה הורים, קליניקה פרטית, הרצאות</h3>
+
             <p className="text-lg text-gray-700 max-w-3xl leading-relaxed text-justify">
 גישתי הטיפולית מבוססת על ידע וניסיון ממגוון עולמות תוכן, אשר מספקים לי את הכלים לבחון את הביטויים המורכבים של יחסי הגומלין בין הנפש והגוף.            </p>
           </div>
