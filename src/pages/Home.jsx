@@ -47,7 +47,8 @@ export default function Home() {
               <strong>פסיכותרפיה המשלבת גוף-נפש</strong>{" "}
               רואה את האדם כישות שלמה בה הגוף והנפש מנהלים דיאלוג מתמיד ומשפיעים זה על זה.
             </p>
-            
+            <h2 className="sr-only">פסיכותרפיה במזכרת בתיה, מטפלת במזכרת בתיה, פסיכותרפיסטית במזכרת בתיה</h3>
+
             <div className="flex gap-4">
               <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
@@ -162,6 +163,7 @@ export default function Home() {
               תחומי הטיפול שלי
             </h2>
 			<h3 className="sr-only">תחומי טיפול: טיפול אישי, טיפול מונחה הורים, קליניקה פרטית, הרצאות</h3>
+
 
             <p className="text-lg text-gray-700 max-w-3xl leading-relaxed text-justify">
 גישתי הטיפולית מבוססת על ידע וניסיון ממגוון עולמות תוכן, אשר מספקים לי את הכלים לבחון את הביטויים המורכבים של יחסי הגומלין בין הנפש והגוף.            </p>
