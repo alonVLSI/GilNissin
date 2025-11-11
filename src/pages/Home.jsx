@@ -192,7 +192,7 @@ export default function Home() {
             />
           </div>
         </div>
-		</br>
+		<br/>
 		<div className="flex gap-4">
               <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
@@ -200,7 +200,7 @@ export default function Home() {
                   יצירת קשר
                 </Button>
               </a>
-            </div>
+        </div>
       </section>
     </>
   );
