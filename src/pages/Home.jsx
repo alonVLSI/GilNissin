@@ -4,13 +4,15 @@ import { Link } from 'react-router-dom';
 import { createPageUrl } from '../components/utils';
 import { Button } from '../components/ui/button';
 import WhatsappIcon from '../components/WhatsappIcon';
+import OpenImage from "../images/Logo.png";
+
 
 const ServiceCard = ({ title, description, link }) => (
   <div className="bg-white p-6 border border-gray-200 hover-lift transition-all duration-300">
     <div className="text-right">
       <div className="w-16 h-16 mb-4 flex items-center justify-center">
         <img 
-          src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/7413e4a01_WhatsAppImage2025-07-01at143149.jpeg"
+          src={OpenImage}
           alt="לוגו"
           className="w-16 h-16 object-cover rounded-full"
         />
@@ -39,7 +41,7 @@ export default function Home() {
               גיל בֶּרדוגו נסים
             </h1>
             <h2 className="text-xl md:text-2xl text-secondary font-medium">
-              פסיכותרפיה משלבת גוף נפש
+              פסיכותרפיסטית משלבת גוף נפש
             </h2>
 			<h2 className="sr-only">פסיכותרפיה משלבת גוף ונפש במזכרת בתיה</h2>
 
@@ -50,10 +52,9 @@ export default function Home() {
             <h2 className="sr-only">פסיכותרפיה במזכרת בתיה, מטפלת במזכרת בתיה, פסיכותרפיסטית במזכרת בתיה</h2>
 
             <div className="flex gap-4">
-              <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
+				<a href={createPageUrl("About")}>
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
-                  <WhatsappIcon className="w-4 h-4 mr-2" />
-                  יצירת קשר
+                  עוד עליי
                 </Button>
               </a>
             </div>
@@ -66,21 +67,21 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="grid lg:grid-cols-2 gap-12 items-stretch mb-12">
             {/* Poem - Right column */}
-            <div className="text-right text-lg text-gray-700 leading-relaxed flex">
-              <div className="bg-rose-50 p-6 border-r-4 border-primary w-full flex flex-col justify-center">
-                <p className="text-lg italic text-gray-700 leading-relaxed mb-3">
-                  "כשהמילה תהפוך לגוף<br />
-                  והגוף יפתח את פיו<br />
-                  ויאמר את המילה שממנה<br />
-                  נוצר<br />
-                  אחבק את הגוף הזה<br />
-                  ואלין אותו לצדי."
-                </p>
-                <p className="text-sm text-gray-500 font-medium">
-                  חזי לסקלי, "שיעור עברית הֵא"
-                </p>
-              </div>
-            </div>
+			<div className="text-right text-lg text-gray-700 leading-relaxed flex">
+			<div className="bg-rose-50 p-6 border-r-4 border-primary w-full flex flex-col justify-center">
+				<p className="text-lg italic text-gray-700 leading-relaxed mb-3 text-justify">
+				"כשהמילה תהפוך לגוף<br />
+				והגוף יפתח את פיו<br />
+				ויאמר את המילה שממנה<br />
+				נוצר<br />
+				אחבק את הגוף הזה<br />
+				ואלין אותו לצדי."
+				</p>
+				<p className="text-sm text-gray-500 font-medium text-left">
+				חזי לסקלי, "שיעור עברית הֵא"
+				</p>
+			</div>
+			</div>
 
             {/* Image - Left column */}
             <div className="flex">
