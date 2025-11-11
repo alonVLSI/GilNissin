@@ -4,7 +4,7 @@ import { Link } from 'react-router-dom';
 import { createPageUrl } from '../components/utils';
 import { Button } from '../components/ui/button';
 import WhatsappIcon from '../components/WhatsappIcon';
-import OpenImage from "../images/Logo.png";
+import LogoImage from "../images/Logo.png";
 
 
 const ServiceCard = ({ title, description, link }) => (
@@ -12,7 +12,7 @@ const ServiceCard = ({ title, description, link }) => (
     <div className="text-right">
       <div className="w-16 h-16 mb-4 flex items-center justify-center">
         <img 
-          src={OpenImage}
+          src={LogoImage}
           alt="לוגו"
           className="w-16 h-16 object-cover rounded-full"
         />
@@ -86,7 +86,7 @@ export default function Home() {
             {/* Image - Left column */}
             <div className="flex">
               <img
-                src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/685460385c43172cc453b6ea/234770a02_.jpg"
+                src= {LogoImage}
                 alt="מעין מים עם יד טובלת במים"
                 className="w-full shadow-md rounded-none h-auto lg:h-full lg:object-cover"
               />
