@@ -41,7 +41,7 @@ export default function About() {
           <div>
             <img 
               src="https://qtrypzzcjebvfcihiynt.supabase.co/storage/v1/object/public/base44-prod/public/685460385c43172cc453b6ea/918f04d69_profile.jpg"
-              alt="גיל ברדוגו נסים"
+              alt="גיל ברדוגו נסים, פסיכותרפיה במזכרת בתיה"
               className="w-full h-full object-cover shadow-md"
             />
           </div>
