@@ -86,6 +86,7 @@ export default function Home() {
                   עוד עליי
                 </Button>
               </a>
+			  </br>
             </div>
 			 <div className="space-y-6">
                 <p className="text-justify">
