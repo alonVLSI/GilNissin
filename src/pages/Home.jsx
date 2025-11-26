@@ -44,20 +44,8 @@ export default function Home() {
               פסיכותרפיסטית משלבת גוף נפש
             </h2>
 			<h2 className="sr-only">פסיכותרפיה משלבת גוף ונפש במזכרת בתיה</h2>
-
-            <p className="text-lg text-gray-700 leading-relaxed max-w-4xl text-justify">
-              <strong>פסיכותרפיה המשלבת גוף-נפש</strong>{" "}
-              רואה את האדם כישות שלמה בה הגוף והנפש מנהלים דיאלוג מתמיד ומשפיעים זה על זה.
-            </p>
             <h2 className="sr-only">פסיכותרפיה במזכרת בתיה, מטפלת במזכרת בתיה, פסיכותרפיסטית במזכרת בתיה</h2>
 
-            <div className="flex gap-4">
-				<a href={createPageUrl("About")}>
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
-                  עוד עליי
-                </Button>
-              </a>
-            </div>
           </div>
         </div>
       </section>
@@ -92,7 +80,33 @@ export default function Home() {
               />
             </div>
           </div>
-
+            <div className="flex gap-4">
+				<a href={createPageUrl("About")}>
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
+                  עוד עליי
+                </Button>
+              </a>
+            </div>
+			 <div className="space-y-6">
+                <p className="text-justify">
+                  האם קרה לכם פעם שהרגשתם את הגוף מנסה לספר לכם משהו? האם חשתם שהכתפיים
+                  תפוסות, עייפות לא מוסברת, או מערכת יחסים מורכבת עם אוכל?
+                </p>
+                <p className="text-justify">
+                  הגוף שלנו מדבר אותנו. הוא נושא את סיפור חיינו, ובדרכו הייחודית,
+                  הלא-מילולית, הוא מבטא את מה שלפעמים קשה להגיד במילים. מתח נפשי מתמשך
+                  יכול להתבטא בכיווץ שרירים, חוויות עבר עלולות להדהד בכאבים פיזיים,
+                  ורגשות שלא קיבלו מקום עשויים להתגלם בהפרעות שינה או בתשישות.
+                </p>
+                <p className="text-justify">
+                  באופן דומה, מערכת-היחסים שלנו עם אוכל ועם הגוף שלנו משמשת לעיתים קרובות
+                  מראה של קונפליקטים פנימיים עמוקים יותר.
+                </p>
+                <p className="text-justify">
+                  אני מאמינה שהמסרים האלה מן הגוף אינם סימפטומים שיש "לתקן", או להעלים,
+                  אלא הם הזמנה להקשבה לעצמנו.
+                </p>
+              </div>
           {/* Text Section - NOW AFTER IMAGE */}
           <div className="text-right space-y-6 text-lg text-gray-700 leading-relaxed">
             <p className="text-justify">
@@ -118,40 +132,7 @@ export default function Home() {
               בסיפורים שהגוף מספר.
             </p>
 
-            {showMore && (
-              <div className="space-y-6">
-                <p className="text-justify">
-                  האם קרה לכם פעם שהרגשתם את הגוף מנסה לספר לכם משהו? האם חשתם שהכתפיים
-                  תפוסות, עייפות לא מוסברת, או מערכת יחסים מורכבת עם אוכל?
-                </p>
-                <p className="text-justify">
-                  הגוף שלנו מדבר אותנו. הוא נושא את סיפור חיינו, ובדרכו הייחודית,
-                  הלא-מילולית, הוא מבטא את מה שלפעמים קשה להגיד במילים. מתח נפשי מתמשך
-                  יכול להתבטא בכיווץ שרירים, חוויות עבר עלולות להדהד בכאבים פיזיים,
-                  ורגשות שלא קיבלו מקום עשויים להתגלם בהפרעות שינה או בתשישות.
-                </p>
-                <p className="text-justify">
-                  באופן דומה, מערכת-היחסים שלנו עם אוכל ועם הגוף שלנו משמשת לעיתים קרובות
-                  מראה של קונפליקטים פנימיים עמוקים יותר.
-                </p>
-                <p className="text-justify">
-                  אני מאמינה שהמסרים האלה מן הגוף אינם סימפטומים שיש "לתקן", או להעלים,
-                  אלא הם הזמנה להקשבה לעצמנו.
-                </p>
-              </div>
-            )}
 
-            <div className="pt-4">
-              {!showMore && (
-                <Button
-                  variant="outline"
-                  className="border-2 border-secondary text-secondary hover:bg-secondary hover:text-white font-medium px-6 py-2"
-                  onClick={() => setShowMore(true)}
-                >
-                  קראו עוד
-                </Button>
-              )}
-            </div>
           </div>
         </div>
       </section>
@@ -193,6 +174,15 @@ export default function Home() {
           </div>
         </div>
 		<br/>
+	<div className="bg-sky-50 p-10 text-right mb-12">
+           <p className="text-xl md:text-2xl leading-relaxed text-gray-800 max-w-3xl mb-8 text-justify">
+            אם הדברים מהדהדים בך, אני מזמינה אותך לתהליך אישי של הקשבה לא שיפוטית, מכילה ותומכת, בו מתקיים מפגש עם עצמך המאפשר לחוות חיוניות, שלמות, ונוכחות נעימה ושקטה יותר בחיים ובתוך גופך.
+          </p>
+          <p className="text-lg text-gray-700 text-justify">
+            אני מקבלת לטיפול פרטני בקליניקה שלי במזכרת בתיה, ובמקביל מטפלת בילדים, נוער והוריהם במרכז "נתיבים להורות ומשפחה".
+          </p>
+        </div>
+        
 		<div className="flex gap-4">
               <a href="https://wa.me/972544276648" target="_blank" rel="noopener noreferrer">
                 <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
