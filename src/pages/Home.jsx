@@ -80,15 +80,8 @@ export default function Home() {
               />
             </div>
           </div>
-            <div className="flex gap-4">
-				<a href={createPageUrl("About")}>
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
-                  עוד עליי
-                </Button>
-              </a>
-            </div>
-			<br/>
-			 <div className="space-y-6">
+
+          <div className="text-right space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p className="text-justify">
                   האם קרה לכם פעם שהרגשתם את הגוף מנסה לספר לכם משהו? האם חשתם שהכתפיים
                   תפוסות, עייפות לא מוסברת, או מערכת יחסים מורכבת עם אוכל?
@@ -107,9 +100,7 @@ export default function Home() {
                   אני מאמינה שהמסרים האלה מן הגוף אינם סימפטומים שיש "לתקן", או להעלים,
                   אלא הם הזמנה להקשבה לעצמנו.
                 </p>
-              </div>
           {/* Text Section - NOW AFTER IMAGE */}
-          <div className="text-right space-y-6 text-lg text-gray-700 leading-relaxed">
             <p className="text-justify">
               כפסיכותרפיסטית בגישה פסיכודינמית, אני מאמינה שהגוף מבטא את הנפש
               בשפתו הייחודית, והנפש, בתורה, פוגשת את הגוף ומתקשרת דרכו.
@@ -132,7 +123,14 @@ export default function Home() {
               ולחקור בעדינות את המשמעויות העמוקות, ולעיתים הלא-מודעות, הטמונות
               בסיפורים שהגוף מספר.
             </p>
-
+            <div className="flex gap-4">
+				<a href={createPageUrl("About")}>
+                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
+                  עוד עליי
+                </Button>
+              </a>
+            </div>
+			<br/>
 
           </div>
         </div>
