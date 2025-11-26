@@ -86,8 +86,8 @@ export default function Home() {
                   עוד עליי
                 </Button>
               </a>
-			  <br/>
             </div>
+			<br/>
 			 <div className="space-y-6">
                 <p className="text-justify">
                   האם קרה לכם פעם שהרגשתם את הגוף מנסה לספר לכם משהו? האם חשתם שהכתפיים
