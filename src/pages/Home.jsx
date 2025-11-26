@@ -81,7 +81,7 @@ export default function Home() {
             </div>
           </div>
 
-          <div className="text-right space-y-6 text-lg text-gray-700 leading-relaxed">
+          <div className="text-justify [text-align-last:justify] space-y-6 text-lg text-gray-700 leading-relaxed">
                 <p className="text-justify">
                   האם קרה לכם פעם שהרגשתם את הגוף מנסה לספר לכם משהו? האם חשתם שהכתפיים
                   תפוסות, עייפות לא מוסברת, או מערכת יחסים מורכבת עם אוכל?
