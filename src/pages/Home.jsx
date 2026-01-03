@@ -8,9 +8,21 @@ export default function Home() {
   return (
     <div className="py-20 px-6">
       <div className="max-w-5xl mx-auto">
-        <div className="text-right mb-16">
-          <h1 className="text-5xl font-bold mb-4"> פסיכותרפיה משלבת גוף נפש</h1>
+      <section className="py-16 px-6 bg-white">
+        <div className="max-w-6xl mx-auto">
+          <div className="space-y-6 text-right mb-8">
+            <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900">
+              גיל בֶּרדוגו נסים פסיכותרפיסטית
+            </h1>
+            <h2 className="text-xl md:text-2xl text-secondary font-medium">
+              פסיכותרפיסטית משלבת גוף נפש
+            </h2>
+			<h2 className="sr-only">פסיכותרפיה משלבת גוף ונפש במזכרת בתיה</h2>
+            <h2 className="sr-only">פסיכותרפיה במזכרת בתיה, מטפלת במזכרת בתיה, פסיכותרפיסטית במזכרת בתיה</h2>
+
+          </div>
         </div>
+      </section>
 
         <div className="bg-sky-50 py-8 px-8 mb-12">
           <div className="space-y-8 text-lg text-gray-700 leading-relaxed text-justify">
