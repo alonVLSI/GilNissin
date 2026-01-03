@@ -14,7 +14,7 @@ export default function Layout({ children, currentPageName }) {
   
 const navItems = [
   { name: "עמוד ראשי", page: "Home" },
-  { name: "עליי", page: "About" },
+  { name: "גישה טיפולית", page: "About" },
   { name: "הקליניקה", page: "Clinic" },
   { name: "טיפול אישי", page: "IndividualTherapy" },
   { name: "טיפול הורה-ילד", page: "ParentGuidance" },

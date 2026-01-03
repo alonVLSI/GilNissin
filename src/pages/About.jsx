@@ -38,11 +38,8 @@ export default function About() {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-6 text-right mb-8">
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900">
-              גיל בֶּרדוגו נסים פסיכותרפיסטית
+פסיכותרפיה גוף נפש
             </h1>
-            <h2 className="text-xl md:text-2xl text-secondary font-medium">
-              פסיכותרפיסטית משלבת גוף נפש
-            </h2>
 			<h2 className="sr-only">פסיכותרפיה משלבת גוף ונפש במזכרת בתיה</h2>
             <h2 className="sr-only">פסיכותרפיה במזכרת בתיה, מטפלת במזכרת בתיה, פסיכותרפיסטית במזכרת בתיה</h2>
 

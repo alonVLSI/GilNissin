@@ -12,7 +12,7 @@ export default function Home() {
         <div className="max-w-6xl mx-auto">
           <div className="space-y-6 text-right mb-8">
             <h1 className="text-4xl md:text-5xl font-semibold leading-tight text-gray-900">
-              גיל בֶּרדוגו נסים פסיכותרפיסטית
+              גיל בֶּרדוגו נסים
             </h1>
             <h2 className="text-xl md:text-2xl text-secondary font-medium">
               פסיכותרפיסטית משלבת גוף נפש
