@@ -122,13 +122,6 @@ export default function About() {
               ולחקור בעדינות את המשמעויות העמוקות, ולעיתים הלא-מודעות, הטמונות
               בסיפורים שהגוף מספר.
             </p>
-            <div className="flex gap-4">
-				<a href={createPageUrl("About")}>
-                <Button size="lg" className="bg-secondary hover:bg-secondary/90 text-white font-medium px-6 py-3">
-                  עוד עליי
-                </Button>
-              </a>
-            </div>
 			<br/>
 
           </div>
